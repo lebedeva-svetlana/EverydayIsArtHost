@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using EverydayIsArt.ViewModels;
+using Microsoft.AspNetCore.Mvc;
 
 namespace EverydayIsArt.Controllers
 {
@@ -10,7 +11,15 @@ namespace EverydayIsArt.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            PostViewModel viewModel = new()
+            {
+                Title = "Заголовок",
+                Text = "Текст",
+                ImageUrl = "",
+                SourceUrl = ""
+            };
+
+            return View(viewModel);
         }
     }
 }

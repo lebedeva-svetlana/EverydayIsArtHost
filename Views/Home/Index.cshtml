@@ -1,13 +1,11 @@
-﻿@*@{
-    ViewData["Title"] = "Index";
-}*@
+﻿@model PostViewModel
 
 <div class="posts">
     <div class="post">
-        <h2 class="post-title">Заголовок поста</h2>
-        <p class="post-text">Содержание поста</p>
+        <h2 class="post-title">@Model.Title</h2>
+        <p class="post-text">@Model.Text</p>
         <p class="post-source">
-            <a href="">Ссылка на источник</a>
+            <a href="@Model.SourceUrl">Ссылка на источник</a>
         </p>
     </div>
 </div>
