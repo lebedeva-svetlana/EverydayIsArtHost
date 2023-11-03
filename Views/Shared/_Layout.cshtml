@@ -6,22 +6,21 @@
     <title>@ViewData["Title"] - EverydayIsArt</title>
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
 </head>
-<body>
-    <header>
-        <nav>
+<body class="body">
+    <header class="header">
+        <nav class="nav">
+            <a asp-action="GetTretyakov">Третьяковская галерея</a>
+            <a asp-action="">В разработке...</a>
         </nav>
     </header>
-    <main>
-        <div>
-            @RenderBody()
-        </div>
+    <main class="main">
+        @RenderBody()
     </main>
-    <div>
-        <footer>
-        </footer>
-    </div>
+    <footer class="footer">
+        EverydayIsArt
+    </footer>
 
-    @*    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    @*<script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>*@
 
     @await RenderSectionAsync("Scripts", required: false)
