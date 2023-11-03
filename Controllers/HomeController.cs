@@ -14,8 +14,8 @@ namespace EverydayIsArt.Controllers
             PostViewModel viewModel = new()
             {
                 Title = "Заголовок",
-                Text = "Текст",
-                ImageUrl = "",
+                Description = "Текст",
+                ImageUrl = "https://w.wiki/8259",
                 SourceUrl = ""
             };
 
