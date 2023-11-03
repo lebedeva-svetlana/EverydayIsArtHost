@@ -1,3 +1,54 @@
-﻿html {
-  font-size: 100%;
+﻿@import "_var.scss";
+
+/** {
+    border: 1px solid grey;
+}*/
+
+html {
+    font-size: 100%;
+    font-family: $base-font;
+}
+
+.body {
+    display: grid;
+    grid-template-areas: "header main" "footer footer";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr auto;
+    grid-gap: 20px;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+    a {
+        margin: 0 0 10px 0;
+        text-transform: uppercase;
+        font-family: $title-font;
+        text-decoration: none;
+        font-size: 1.1em;
+    }
+
+    a:last-child {
+        margin: 0;
+    }
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    padding: 20px;
+    font-family: $title-font;
+    font-size: 1.2em;
 }
