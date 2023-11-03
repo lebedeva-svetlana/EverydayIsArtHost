@@ -1,8 +1,8 @@
 ﻿@import "_var.scss";
 
-/** {
+* {
     border: 1px solid grey;
-}*/
+}
 
 html {
     font-size: 100%;
@@ -14,7 +14,7 @@ html {
     grid-template-areas: "header main" "footer footer";
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr auto;
-    grid-gap: 20px;
+    grid-gap: $base-offset;
     margin: 0;
     min-height: 100vh;
 }
@@ -26,10 +26,10 @@ html {
 .nav {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    padding: $base-offset;
 
     a {
-        margin: 0 0 10px 0;
+        margin: 0 0 $small-offset 0;
         text-transform: uppercase;
         font-family: $title-font;
         text-decoration: none;
@@ -48,7 +48,38 @@ html {
 .footer {
     grid-area: footer;
     text-align: center;
-    padding: 20px;
+    padding: $base-offset;
     font-family: $title-font;
     font-size: 1.2em;
+}
+
+.posts {
+    display: grid;
+    min-height: 100%;
+    align-content: center;
+    justify-content: center;
+
+    .post {
+        border-radius: $border-radius;
+        box-shadow: $box-shadow;
+        margin: $base-offset;
+        padding: $base-offset;
+        height: min-content;
+
+        h2, p {
+            margin: 0 0 $small-offset 0;
+        }
+
+        *:last-child {
+            margin: 0;
+        }
+    }
+
+    .post-title {
+        font-family: $title-font;
+    }
+
+    .post-source {
+        font-style: italic;
+    }
 }
