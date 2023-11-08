@@ -1,25 +1,22 @@
-﻿using EverydayIsArt.ViewModels;
+﻿using EverydayIsArt.Models;
+using EverydayIsArt.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EverydayIsArt.Controllers
 {
     public class HomeController : Controller
     {
-        public HomeController()
+        private IArtService _artService;
+
+        public HomeController(IArtService artService)
         {
+            _artService = artService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            PostViewModel viewModel = new()
-            {
-                Title = "Заголовок",
-                Description = "Текст",
-                ImageUrl = "https://upload.wikimedia.org/wikipedia/ru/5/50/%D0%9F%D0%BB%D0%B0%D1%81%D1%82%D0%BE%D0%B2._%D0%A1%D0%B5%D0%BD%D0%BE%D0%BA%D0%BE%D1%81._1945.jpg",
-                SourceUrl = ""
-            };
-
-            return View(viewModel);
+            Art art = await _artService.GetArt();
+            return View(art);
         }
     }
 }
