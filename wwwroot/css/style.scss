@@ -1,7 +1,11 @@
 ﻿@import "_var.scss";
 
-* {
+/** {
     border: 1px solid grey;
+}*/
+
+* {
+    color: $base-color;
 }
 
 html {
@@ -34,10 +38,14 @@ html {
         font-family: $title-font;
         text-decoration: none;
         font-size: 1.1em;
+        text-decoration: none;
     }
 
     a:last-child {
         margin: 0;
+    }
+
+    a:visited {
     }
 }
 
@@ -62,12 +70,25 @@ html {
     .post {
         border-radius: $border-radius;
         box-shadow: $box-shadow;
-        margin: $base-offset;
-        padding: $base-offset;
         height: min-content;
+        margin: $base-offset;
+        max-width: 600px;
+    }
+
+    .post-image {
+        border-radius: $border-radius $border-radius 0 0;
+        max-width: 100%;
+    }
+
+    .post-text {
+        padding: $base-offset;
+
+        p {
+            line-height: 1.5em;
+        }
 
         h2, p {
-            margin: 0 0 $small-offset 0;
+            margin: 0;
         }
 
         *:last-child {
@@ -79,7 +100,18 @@ html {
         font-family: $title-font;
     }
 
+    .post-description-group {
+        margin: 0 0 $base-offset 0;
+    }
+
     .post-source {
         font-style: italic;
     }
+}
+
+.line {
+    height: 1px;
+    width: 30%;
+    margin: 0 auto $base-offset auto;
+    background-color: $base-color;
 }
