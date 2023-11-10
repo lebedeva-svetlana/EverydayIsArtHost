@@ -7,11 +7,15 @@
     <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
 </head>
 <body class="body">
+    <div class="shadow"></div>
     <header class="header">
         <div class="panel">
             <nav class="nav">
+                <a asp-action="Index">
+                    <h1 id="title-main">Everyday<span class="title-is">Is</span>Art</h1>
+                </a>
                 <a asp-action="Random" asp-route-source="tretyakov">Третьяковская галерея</a>
-                <a asp-action="Info">Третьяковская галерея</a>
+                <a asp-action="Info">Условия использования</a>
             </nav>
             <div class="bottom-panel">
                 <div class="panel-square-group">
