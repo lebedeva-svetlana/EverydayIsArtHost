@@ -14,4 +14,10 @@
     <PackageReference Include="HtmlAgilityPack" Version="1.11.54" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="wwwroot\img\shadow.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
