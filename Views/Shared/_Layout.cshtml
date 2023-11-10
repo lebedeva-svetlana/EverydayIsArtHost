@@ -8,13 +8,35 @@
 </head>
 <body class="body">
     <header class="header">
-        <nav class="nav">
-            <a asp-action="GetTretyakov">Третьяковская галерея</a>
-            <a asp-action="">В разработке...</a>
-        </nav>
+        <div class="panel">
+            <nav class="nav">
+                <a asp-action="Random" asp-route-source="tretyakov">Третьяковская галерея</a>
+                <a asp-action="Info">Третьяковская галерея</a>
+            </nav>
+            <div class="bottom-panel">
+                <div class="panel-square-group">
+                    <div class="panel-square"></div>
+                    <div class="panel-square"></div>
+                </div>
+            </div>
+        </div>
     </header>
     <main class="main">
-        @RenderBody()
+        <div class="panel">
+            @RenderBody()
+            <div class="bottom-panel">
+                <div class="panel-square-group">
+                    <div class="panel-square"></div>
+                    <div class="panel-square"></div>
+                    <div class="panel-square"></div>
+                    <div class="panel-square"></div>
+                    <div class="panel-square"></div>
+                    <div class="panel-square"></div>
+                    <div class="panel-square"></div>
+                    <div class="panel-square"></div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         EverydayIsArt
