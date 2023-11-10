@@ -15,18 +15,15 @@ namespace EverydayIsArt.Services
 
         public async Task<Art> GetArt()
         {
-            //string objectUrl = await GetSourceUrl();
-            string objectUrl = "https://my.tretyakov.ru/app/masterpiece/123107";
+            string objectUrl = await GetSourceUrl();
             object htmlDocument = await _htmlService.GetHTMLDocument(objectUrl);
 
-            Art art = new()
-            {
-                Description = GetDescription(htmlDocument),
-                Title = GetTitle(htmlDocument),
-                ImageUrl = GetImageUrl(htmlDocument),
-                SourceUrl = objectUrl,
-                SourceUrlText = _config.GetValue<string>("SourceUrlText:Tretyakov")
-            };
+            Art art = new();
+            art.Description = GetDescription(htmlDocument);
+            art.Title = GetTitle(htmlDocument);
+            art.ImageUrl = GetImageUrl(htmlDocument);
+            art.SourceUrl = objectUrl;
+            art.SourceUrlText = _config.GetValue<string>("SourceUrlText:Tretyakov");
 
             return art;
         }
@@ -130,7 +127,7 @@ namespace EverydayIsArt.Services
             object htmlDocument = await _htmlService.GetHTMLDocument(GetGalleryUrl());
             string href = _htmlService.GetAttributeValue(htmlDocument, selector, "href");
 
-            return Path.Combine(_config.GetValue<string>("URL:Tretyakov:Base"), href).ToString();
+            return _config.GetValue<string>("URL:Tretyakov:Base") + href;
         }
 
         private string GetTitle(object htmlDocument)
