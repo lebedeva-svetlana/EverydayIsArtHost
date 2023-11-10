@@ -18,27 +18,62 @@ html {
     grid-template-areas: "header main" "footer footer";
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr auto;
-    grid-gap: $base-offset;
     margin: 0;
     min-height: 100vh;
+    background-color: $background-color;
 }
 
 .header {
     grid-area: header;
+    padding: $small-offset $small-offset 0 $small-offset;
+}
+
+.panel {
+    border: $panel-border;
+    box-shadow: $box-shadow-inner;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: calc(100% - $panel-border-offset);
+    outline: $panel-border-outline;
+
+    .bottom-panel {
+        border-top: $bottom-panel-border;
+        box-shadow: $box-shadow-top;
+    }
+
+    .panel-square-group {
+        border: $panel-border;
+        box-shadow: $box-shadow-inner;
+        display: flex;
+        flex-direction: row;
+        margin: $small-offset;
+        outline: $panel-border-outline;
+    }
+
+    .panel-square {
+        background-color: $backgroud-panel-color;
+        border: $panel-border;
+        box-shadow: $box-shadow-outer;
+        height: 40px;
+        margin: $small-offset;
+        width: 100%;
+        outline: $panel-border-outline;
+    }
 }
 
 .nav {
     display: flex;
     flex-direction: column;
-    padding: $base-offset;
+    margin: $small-offset;
 
     a {
-        margin: 0 0 $small-offset 0;
-        text-transform: uppercase;
         font-family: $title-font;
-        text-decoration: none;
         font-size: 1.1em;
+        margin: 0 0 $small-offset 0;
         text-decoration: none;
+        text-decoration: none;
+        text-transform: uppercase;
     }
 
     a:last-child {
@@ -51,37 +86,49 @@ html {
 
 .main {
     grid-area: main;
+    margin: $small-offset $small-offset 0 $small-offset;
 }
 
 .footer {
-    grid-area: footer;
-    text-align: center;
-    padding: $base-offset;
+    background-color: $carper-color;
+    color: white;
     font-family: $title-font;
     font-size: 1.2em;
+    grid-area: footer;
+    margin: $base-offset 0 0 0;
+    padding: $base-offset;
+    text-align: center;
 }
 
 .posts {
-    display: grid;
-    min-height: 100%;
     align-content: center;
+    display: grid;
     justify-content: center;
+    min-height: 100%;
 
     .post {
+        align-items: center;
         border-radius: $border-radius;
-        box-shadow: $box-shadow;
+        display: flex;
+        flex-direction: column;
         height: min-content;
         margin: $base-offset;
         max-width: 600px;
     }
 
     .post-image {
-        border-radius: $border-radius $border-radius 0 0;
-        max-width: 100%;
+        border: $art-border;
+        max-width: 300px;
+        outline: $outer-art-outline;
+        box-shadow: $box-shadow-art;
     }
 
     .post-text {
+        box-shadow: $box-shadow-sign;
+        font-size: 0.9em;
+        margin: $base-offset + $small-offset 0 0 0;
         padding: $base-offset;
+        background-color: $backgroud-sign-color;
 
         p {
             line-height: 1.5em;
@@ -89,6 +136,10 @@ html {
 
         h2, p {
             margin: 0;
+        }
+
+        h2 {
+            color: $gold-color;
         }
 
         *:last-child {
