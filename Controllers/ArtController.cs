@@ -18,6 +18,11 @@ namespace EverydayIsArt.Controllers
             return View();
         }
 
+        public IActionResult Info()
+        {
+            return View();
+        }
+
         public async Task<IActionResult> Random(string source)
         {
             Art art = await _artService.GetArt();
