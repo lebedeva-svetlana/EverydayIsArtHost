@@ -1,12 +1,12 @@
-# EverydayIsArt
+![Tretyakov](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/263a59a1-b109-41d8-ae84-ccb6c948ed60)# EverydayIsArt
 
 Website that sends out random museum exhibits. Work in progress.
 
 ## Screenshots
 
-![MainPage](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/7b5f00d1-997f-4e34-9379-bbc2a5e16e4d)
+![About](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/0430e03a-a7f6-408b-b643-1fdcda0fe81b)
 
-![MainPage2](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/391e4ff1-c668-4dfa-9415-771f8848af6d)
+![Tretyakov](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/7278e9ac-b212-4847-9c1a-8e0fd6894020)
 
 ## Credits
 
