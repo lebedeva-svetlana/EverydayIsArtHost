@@ -1,4 +1,4 @@
-![Tretyakov](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/263a59a1-b109-41d8-ae84-ccb6c948ed60)# EverydayIsArt
+# EverydayIsArt
 
 Website that sends out random museum exhibits. Work in progress.
 
