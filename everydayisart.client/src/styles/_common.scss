@@ -1,0 +1,90 @@
+﻿@use '_vars.scss';
+
+.button-base {
+    background-color: white;
+    border: 1px solid vars.$yellow-base;
+    color: vars.$green-base;
+    cursor: pointer;
+    font-family: vars.$title-font;
+    padding: 8px 16px;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: vars.$yellow-base;
+        color: white;
+    }
+
+    &:focus {
+        background-color: vars.$yellow-dark;
+        color: white;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}
+
+.a-base {
+    color: vars.$green-base;
+    text-decoration-color: vars.$yellow-base;
+
+    &:hover {
+        color: vars.$yellow-base;
+        text-decoration: none;
+    }
+
+    &:focus {
+        color: vars.$yellow-dark;
+        text-decoration: none;
+    }
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    background-color: white;
+    border: 1px solid vars.$yellow-base;
+    color: currentColor;
+    cursor: pointer;
+    display: grid;
+    font: inherit;
+    height: 1.2em;
+    margin: 0;
+    place-content: center;
+    width: 1.2em;
+    border-radius: 100%;
+
+    &::before {
+        background-color: none;
+        border-radius: 100%;
+        box-shadow: inset 1em 1em vars.$yellow-base;
+        content: "";
+        height: 0.6em;
+        transform: scale(0);
+        width: 0.6em;
+    }
+
+    &:checked::before {
+        transform: scale(1);
+    }
+
+    &:hover::before {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+
+    &:checked:hover::before {
+        box-shadow: inset 1em 1em vars.$yellow-dark;
+        opacity: 1;
+    }
+}
+
+label:hover {
+    color: vars.$yellow-base;
+    cursor: pointer;
+}
+
+label:has(input:disabled) {
+    pointer-events: none;
+    opacity: 0.5;
+}

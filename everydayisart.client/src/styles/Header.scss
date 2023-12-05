@@ -1,0 +1,77 @@
+﻿@use '_vars.scss';
+
+.header {
+    grid-area: header;
+    margin: 30px;
+    padding: 0 30px 0 0;
+    text-transform: uppercase;
+    border-right: 1px solid vars.$grey-base;
+
+    .header-title {
+        font-size: 2em;
+        text-align: center;
+        margin: 0;
+
+        &:hover {
+            color: vars.$yellow-base;
+
+            .header-title-is {
+                color: vars.$green-base;
+            }
+        }
+    }
+
+    .header-title-is {
+        color: vars.$yellow-base;
+    }
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+
+    a {
+        color: vars.$green-base;
+        font-family: vars.$title-font;
+        text-decoration: none;
+    }
+
+    a:last-child {
+        margin: 0;
+    }
+
+    .nav-link {
+        margin: 0 0 20px 0;
+
+        &:hover {
+            color: vars.$yellow-base;
+        }
+
+        &:focus {
+            color: vars.$yellow-dark;
+        }
+    }
+
+    .nav-link-active {
+        &::before {
+            color: vars.$yellow-base;
+            content: '●';
+            padding: 0 5px 0 0;
+        }
+
+        &:hover::before {
+            color: vars.$yellow-dark;
+        }
+    }
+
+    .header-link {
+        margin: 0 0 30px 0;
+    }
+
+    .nav-line {
+        background-color: vars.$grey-base;
+        height: 0.5px;
+        margin: 0 auto 20px auto;
+        width: 50%;
+    }
+}
