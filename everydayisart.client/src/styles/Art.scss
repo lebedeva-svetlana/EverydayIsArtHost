@@ -9,7 +9,8 @@
     padding: 10px 30px 30px 30px;
 
     &:has(.art-get:disabled) {
-        opacity: 0.5;
+        animation: flicker 2000ms infinite;
+        opacity: 0.90;
         pointer-events: none;
     }
 }
