@@ -2,7 +2,7 @@
 {
     public class Art
     {
-        public string Title { get; set; }
+        public string? Title { get; set; }
 
         public string? Date { get; set; }
 
