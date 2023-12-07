@@ -12,6 +12,14 @@ function TermsOfUse() {
                         </p>
                     </div>
                 </li>
+                <li className="terms-li">
+                    <div className="terms-source-group">
+                        <h2 className="terms-source-title">Музей Виктории и Альберта</h2>
+                        <p className="terms-source-p">
+                            <a href="https://www.tretyakovgallery.ru/about/copirith/" className="terms-source-link">V&A websites terms and conditions</a>
+                        </p>
+                    </div>
+                </li>
             </ol>
 
         </div>

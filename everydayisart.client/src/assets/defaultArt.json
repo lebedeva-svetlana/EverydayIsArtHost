@@ -23,5 +23,30 @@
         ]
       }
     ]
+  },
+  "vam": {
+    "imageUrl": "https://framemark.vam.ac.uk/collections/2008BU1275/full/1400,/0/default.jpg",
+    "title": "The Citadel of Sidon",
+    "date": "1848 (painted)",
+    "author": [
+      "John E. Bowman"
+    ],
+    "sourceUrl": "https://collections.vam.ac.uk/item/O139805/the-citadel-of-sidon-watercolour-bowman-john-e/",
+    "sourceUrlText": "© Victoria and Albert Museum, London",
+    "description": [
+      {
+        "parts": [
+          "Height: 23.9cm",
+          "Width: 34cm",
+          "Materials and techniques: pencil and watercolour heightened with white and gum",
+          "Accession number: SD.130"
+        ]
+      },
+      {
+        "parts": [
+          "Purchased with the assistance of the National Heritage Memorial Fund, Art Fund, Shell International and the Friends of the V&A."
+        ]
+      }
+    ]
   }
 }

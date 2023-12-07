@@ -8,7 +8,9 @@ import About from './components/About.jsx'
 
 const random = 'random';
 const tretyakov = 'tretyakov';
+const vam = 'vam';
 const tretyakovPath = `${random}/${tretyakov}`;
+const vamPath = `${random}/${vam}`;
 
 const router = createBrowserRouter([
     {
@@ -24,6 +26,15 @@ const router = createBrowserRouter([
         element: (
             <Layout>
                 <Art url={`https://localhost:7015/${tretyakovPath}`} org={tretyakov} ></Art>
+            </Layout>
+
+        )
+    },
+    {
+        path: vamPath,
+        element: (
+            <Layout>
+                <Art url={`https://localhost:7015/${vamPath}`} org={vam} ></Art>
             </Layout>
 
         )
