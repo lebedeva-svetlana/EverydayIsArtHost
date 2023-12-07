@@ -58,18 +58,6 @@ namespace EverydayIsArt.Server.Services
         {
             List<DescriptionGroup> description = new();
 
-            //var datePart = GetDatePart(htmlDocument);
-            //if (datePart is not null)
-            //{
-            //    description.Add(new DescriptionGroup(datePart));
-            //}
-
-            //var authorPart = GetAuthorPart(htmlDocument);
-            //if (authorPart is not null)
-            //{
-            //    description.Add(new DescriptionGroup(authorPart));
-            //}
-
             var mediumPart = GetMeduimPart(htmlDocument);
             if (mediumPart is not null)
             {
