@@ -14,7 +14,7 @@ Website that sends out random museum exhibits. Work in progress.
 
 ### Victoria and Albert Museum
 
-![VictoriaAndAlbertMuseum](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/7efb91b7-999f-498b-b3fa-c405b86c42f4)
+![VictoriaAndAlbertMuseum](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/d0d9e6aa-dbb1-463f-8542-e19cfa4df6df)
 
 ## Credits
 
