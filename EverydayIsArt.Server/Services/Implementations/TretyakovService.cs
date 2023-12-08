@@ -121,6 +121,7 @@ namespace EverydayIsArt.Server.Services
 
             return _htmlService.NormalizeNodesInnerText(_htmlService.GetNodesInnerText(htmlDocument, selector));
         }
+
         private async Task<string> GetSourceUrl()
         {
             int end = _config.GetValue<int>("ObjectsNumber:Tretyakov:Art") + 1;

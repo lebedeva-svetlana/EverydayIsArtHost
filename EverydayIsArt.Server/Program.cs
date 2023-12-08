@@ -1,3 +1,4 @@
+using Serilog;
 using EverydayIsArt.Server.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +13,14 @@ builder.Services.AddCors(options => options.AddPolicy(name: anyCors,
               .AllowAnyHeader();
     }
 ));
+
+var logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(builder.Configuration)
+    .Enrich.FromLogContext()
+    .CreateLogger();
+
+builder.Logging.ClearProviders();
+builder.Logging.AddSerilog(logger);
 
 builder.Services.AddControllers();
 

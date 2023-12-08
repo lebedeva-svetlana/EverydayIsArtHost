@@ -5,7 +5,7 @@ namespace EverydayIsArt.Controllers
 {
     [ApiController]
     [Route("random/[controller]")]
-    public class VamController(IVamService artService) : ArtController(artService)
+    public class VamController(IVamService artService, ILogger<ArtController> logger) : ArtController(artService, logger)
     {
     }
 }
