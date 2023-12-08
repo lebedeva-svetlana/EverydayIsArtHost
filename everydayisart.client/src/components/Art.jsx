@@ -21,7 +21,6 @@ function Art({ url, org }) {
         setIsLoading(true);
         let response = await fetch(url);
         if (!response.ok) {
-            alert(`Random fetch failed. ${response.status}: ${response.statusText}`);
             setHasError(true);
             setIsLoading(false);
         }
