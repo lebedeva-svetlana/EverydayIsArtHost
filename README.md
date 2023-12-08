@@ -12,7 +12,7 @@ Website that sends out random museum exhibits. Work in progress.
 
 ## Credits
 
-Third-party libraries: [Html Agility Pack](https://github.com/desandro/masonry](https://github.com/zzzprojects/html-agility-pack)https://github.com/zzzprojects/html-agility-pack) licensed with MIT.
+Third-party libraries: [Html Agility Pack](https://github.com/desandro/masonry](https://github.com/zzzprojects/html-agility-pack)https://github.com/zzzprojects/html-agility-pack) licensed with MIT; [Serilog](https://github.com/serilog/serilog-sinks-file) licensed with Apache-2.0 license.
 
 ## Terms of use
 
