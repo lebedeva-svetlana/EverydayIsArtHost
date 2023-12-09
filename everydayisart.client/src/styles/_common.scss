@@ -14,6 +14,15 @@
     }
 }
 
+.button-symbol {
+    background-color: transparent;
+    border: none;
+    color: vars.$green-base;
+    cursor: pointer;
+    font-size: 2em;
+    height: min-content;
+}
+
 .button-base {
     background-color: white;
     border: 1px solid vars.$yellow-base;
