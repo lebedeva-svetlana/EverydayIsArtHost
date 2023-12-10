@@ -5,13 +5,13 @@
         color: vars.$light-color-base;
     }
 
-    .button-base, input[type="checkbox"] {
+    input[type="checkbox"] {
         background-color: white;
     }
 }
 
 @media (prefers-color-scheme: dark) {
-    #root, .button-base, input[type="checkbox"] {
+    #root, input[type="checkbox"] {
         background-color: vars.$dark-color-background;
     }
 

@@ -31,6 +31,7 @@
 }
 
 .button-base {
+    background-color: transparent;
     border: 1px solid vars.$yellow-base;
     cursor: pointer;
     font-family: vars.$title-font;
