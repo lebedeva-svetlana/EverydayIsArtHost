@@ -1,7 +1,7 @@
 ﻿@use '_vars.scss';
 
 @media (prefers-color-scheme: light) {
-    #root, nav a, .header-title:hover .header-title-is, .about-project-name-green, .button-symbol, .a-base, .button-symbol {
+    html, nav a, .header-title:hover .header-title-is, .about-project-name-green, .button-symbol, .a-base, .button-symbol {
         color: vars.$light-color-base;
     }
 
@@ -11,7 +11,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-    #root, input[type="checkbox"] {
+    html, input[type="checkbox"] {
         background-color: vars.$dark-color-background;
     }
 
