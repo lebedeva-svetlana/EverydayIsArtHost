@@ -22,6 +22,7 @@ Third-party libraries:
 
 - [Html Agility Pack](https://github.com/desandro/masonry](https://github.com/zzzprojects/html-agility-pack)https://github.com/zzzprojects/html-agility-pack) licensed with MIT.
 - [Serilog](https://github.com/serilog/serilog-sinks-file) licensed with Apache-2.0 license.
+- [React Responsive](https://github.com/yocontra/react-responsive) licensed with MIT.
 
 ## Terms of use
 
