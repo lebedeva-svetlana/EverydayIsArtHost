@@ -16,6 +16,10 @@ Website that sends out random museum exhibits. Work in progress.
 
 ![VictoriaAndAlbertMuseum](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/d0d9e6aa-dbb1-463f-8542-e19cfa4df6df)
 
+### Dark Mobile Scheme
+
+![MobileDark](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/ae808f4c-5488-41fd-9345-3780ddec324a)
+
 ## Credits
 
 Third-party libraries:
