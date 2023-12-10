@@ -17,7 +17,6 @@
 .button-symbol {
     background-color: transparent;
     border: none;
-    color: vars.$green-base;
     cursor: pointer;
     font-size: 2em;
     height: min-content;
@@ -32,9 +31,7 @@
 }
 
 .button-base {
-    background-color: white;
     border: 1px solid vars.$yellow-base;
-    color: vars.$green-base;
     cursor: pointer;
     font-family: vars.$title-font;
     padding: 8px 16px;
@@ -57,7 +54,6 @@
 }
 
 .a-base {
-    color: vars.$green-base;
     text-decoration-color: vars.$yellow-base;
 
     &:hover {
@@ -73,7 +69,6 @@
 
 input[type="checkbox"] {
     appearance: none;
-    background-color: white;
     border: 1px solid vars.$yellow-base;
     color: currentColor;
     cursor: pointer;

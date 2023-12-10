@@ -14,10 +14,6 @@
 
         &:hover {
             color: vars.$yellow-base;
-
-            .header-title-is {
-                color: vars.$green-base;
-            }
         }
     }
 
@@ -31,7 +27,6 @@
     flex-direction: column;
 
     a {
-        color: vars.$green-base;
         font-family: vars.$title-font;
         text-decoration: none;
     }

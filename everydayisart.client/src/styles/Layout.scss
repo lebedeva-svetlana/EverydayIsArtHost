@@ -1,12 +1,12 @@
 ﻿@use '_normalize.css';
 @use '_vars.scss';
+@use '_colorScheme.scss';
 
 /** {
     border: 1px solid grey;
 }*/
 
 #root {
-    color: vars.$green-base;
     display: grid;
     font-family: vars.$base-font;
     font-size: 100%;
