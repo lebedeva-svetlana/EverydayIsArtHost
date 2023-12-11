@@ -1,10 +1,14 @@
+﻿import ColorSchemeButton from './ColorSchemeButton.jsx';
 import '../styles/Main.scss';
 
 function Main({ children }) {
     return (
-        <main className="main">
-            {children}
-        </main>
+        <>
+            <ColorSchemeButton></ColorSchemeButton>
+            <main className="main">
+                {children}
+            </main>
+        </>
     );
 }
 

@@ -1,0 +1,18 @@
+@use '_vars.scss';
+@use '_common.scss';
+
+.change-color-scheme {
+    @extend .button-symbol;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    .color-scheme-icon {
+        height: 2.5em;
+        width: 2.5em;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
