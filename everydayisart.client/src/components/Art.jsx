@@ -1,15 +1,18 @@
 import { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 import ArtContent from './ArtContent.jsx';
 import '../styles/Art.scss';
 import DefaultArt from '../assets/defaultArt.json';
-import Logo from '../assets/images/icon.svg';
 
-function Art({ url, org }) {
+function Art() {
     const [art, setArt] = useState(null);
     const [isArtShown, setIsArtShown] = useState(false);
     const [isDescNeed, setIsDescNeed] = useState(true);
     const [isLoading, setIsLoading] = useState(false);
     const [hasError, setHasError] = useState(false);
+
+    let { org } = useParams();
+    let url = `https://localhost:7015/${org}`;
 
     useEffect(() => {
         setArt(DefaultArt[org]);

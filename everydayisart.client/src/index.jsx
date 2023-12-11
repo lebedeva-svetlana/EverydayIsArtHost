@@ -6,12 +6,6 @@ import Art from './components/Art.jsx'
 import TermsOfUse from './components/TermsOfUse.jsx'
 import About from './components/About.jsx'
 
-const random = 'random';
-const tretyakov = 'tretyakov';
-const vam = 'vam';
-const tretyakovPath = `${random}/${tretyakov}`;
-const vamPath = `${random}/${vam}`;
-
 const router = createBrowserRouter([
     {
         path: '/',
@@ -22,19 +16,10 @@ const router = createBrowserRouter([
         ),
     },
     {
-        path: tretyakovPath,
+        path: "random/:org",
         element: (
             <Layout>
-                <Art url={`https://localhost:7015/${tretyakovPath}`} org={tretyakov} ></Art>
-            </Layout>
-
-        )
-    },
-    {
-        path: vamPath,
-        element: (
-            <Layout>
-                <Art url={`https://localhost:7015/${vamPath}`} org={vam} ></Art>
+                <Art></Art>
             </Layout>
 
         )
