@@ -22,12 +22,27 @@
     }
 
     .header-mobile {
+        align-items: center;
         display: flex;
         justify-content: center;
+        margin: 0 0 30px 0;
+
+        .button-symbol, .change-color-scheme {
+            margin: 0 0 0 10px;
+            padding: 0;
+        }
 
         .button-symbol {
             font-size: 2em;
-            margin: 0 0 0 10px;
+        }
+
+        .color-scheme-icon {
+            height: 2em;
+            width: 2em;
+        }
+
+        .change-color-scheme {
+            position: static;
         }
     }
 }
@@ -37,5 +52,20 @@
         grid-template-areas: "header main";
         grid-template-columns: 1fr 4fr;
         grid-template-rows: 1fr;
+    }
+
+    .header-link {
+        margin: 0 0 30px 0;
+    }
+
+    .change-color-scheme {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+
+        .color-scheme-icon {
+            height: 2.5em;
+            width: 2.5em;
+        }
     }
 }

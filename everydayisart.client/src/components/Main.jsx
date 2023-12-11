@@ -1,10 +1,15 @@
-﻿import ColorSchemeButton from './ColorSchemeButton.jsx';
+﻿import { useMediaQuery } from 'react-responsive';
+import ColorSchemeButton from './ColorSchemeButton.jsx';
 import '../styles/Main.scss';
 
 function Main({ children }) {
+    const isDesktop = useMediaQuery({
+        query: '(min-width: 980px)'
+    });
+
     return (
         <>
-            <ColorSchemeButton></ColorSchemeButton>
+            {isDesktop && <ColorSchemeButton></ColorSchemeButton>}
             <main className="main">
                 {children}
             </main>
