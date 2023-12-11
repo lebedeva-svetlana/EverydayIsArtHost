@@ -4,7 +4,7 @@ import Icon from '../assets/images/colorScheme.svg';
 import '../styles/ColorSchemeButton.scss';
 
 function ColorSchemeButton() {
-    const [isDark, setIsDark] = useState(true);
+    const [isDark, setIsDark] = useState(false);
     const prefersColorScheme = useMediaQuery(
         {
             query: "(prefers-color-scheme: dark)",
