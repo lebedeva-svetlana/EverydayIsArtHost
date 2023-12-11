@@ -18,7 +18,7 @@ Website that sends out random museum exhibits. Work in progress.
 
 ### Dark Mobile Scheme
 
-![DarkMobileMode](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/cda31353-478a-43d8-be9b-d80bafc26e45)
+![DarkMobileMod](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/cb9ff0af-382d-4c51-a81c-c2dd950d430a)
 
 ## Credits
 
