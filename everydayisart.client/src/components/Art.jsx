@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
+
 import ArtContent from './ArtContent.jsx';
-import '../styles/Art.scss';
-import DefaultArt from '../assets/defaultArt.json';
 import NotFound from './NotFound.jsx'
+
+import DefaultArt from '../assets/defaultArt.json';
+
+import '../styles/Art.scss';
 
 function Art() {
     const [art, setArt] = useState(null);

@@ -1,6 +1,8 @@
 import { useMediaQuery } from "react-responsive";
 import { useState, useEffect } from "react";
+
 import Icon from '../assets/images/colorScheme.svg';
+
 import '../styles/ColorSchemeButton.scss';
 
 function ColorSchemeButton() {

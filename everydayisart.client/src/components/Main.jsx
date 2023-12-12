@@ -1,5 +1,7 @@
 ﻿import { useMediaQuery } from 'react-responsive';
+
 import ColorSchemeButton from './ColorSchemeButton.jsx';
+
 import '../styles/Main.scss';
 
 function Main({ children }) {

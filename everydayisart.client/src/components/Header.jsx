@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { NavLink, Link } from "react-router-dom";
+
 import ColorSchemeButton from './ColorSchemeButton.jsx';
+
 import '../styles/Header.scss';
 
 function Header() {

@@ -1,4 +1,5 @@
 import ArtDescription from './ArtDescription.jsx';
+
 import '../styles/ArtContent.scss';
 
 function ArtContent({ artContent, isDescNeed }) {
