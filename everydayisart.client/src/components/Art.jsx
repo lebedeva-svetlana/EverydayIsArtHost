@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import ArtContent from './ArtContent.jsx';
 import '../styles/Art.scss';
 import DefaultArt from '../assets/defaultArt.json';
+import NotFound from './NotFound.jsx'
 
 function Art() {
     const [art, setArt] = useState(null);
@@ -33,6 +34,10 @@ function Art() {
 
     function handleChange() {
         setIsDescNeed(!isDescNeed);
+    }
+
+    if (DefaultArt[org] == undefined) {
+        return <NotFound></NotFound>;
     }
 
     return (
