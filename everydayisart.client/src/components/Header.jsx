@@ -36,6 +36,8 @@ function Header() {
                     </div>
                 }
                 {(isDesktop || isNavOpen) && <>
+                    <NavLink to="/random/all" className={({ isActive }) => (isActive ? active : normal)}>Общая галерея</NavLink>
+                    <div className="nav-line"></div>
                     <NavLink to="/random/tretyakov" className={({ isActive }) => (isActive ? active : normal)}>Третьяковская галерея</NavLink>
                     <NavLink to="/random/vam" className={({ isActive }) => (isActive ? active : normal)}>Музей Виктории и Альберта</NavLink>
                     <div className="nav-line"></div>

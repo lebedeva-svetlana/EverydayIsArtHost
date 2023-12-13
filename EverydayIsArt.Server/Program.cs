@@ -34,6 +34,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<ITretyakovService, TretyakovService>();
 builder.Services.AddScoped<IVamService, VamService>();
+builder.Services.AddScoped<IAllService, AllService>();
 builder.Services.AddScoped<IHTMLService, HTMLService>();
 
 var app = builder.Build();

@@ -1,4 +1,29 @@
 {
+  "all": {
+    "imageUrl": "https://cdn.tretyakov.ru/mytretyakov/25/6af54308c295be607e56b434bd28e077/thumb/c215b446bcdf956d848a8419c1b5a920_x1.png",
+    "title": "Гонцы. Ранним утром в Кремле",
+    "date": "1913",
+    "author": [
+      "Васнецов Аполлинарий (1856-1933)"
+    ],
+    "sourceUrl": "https://my.tretyakov.ru/app/masterpiece/10987",
+    "sourceUrlText": "Из собрания Третьяковской галереи",
+    "description": [
+      {
+        "parts": [
+          "Размер - 125,5 x 178,5",
+          "Материал - холст",
+          "Техника - масло",
+          "Инвентарный номер - Ж-433"
+        ]
+      },
+      {
+        "parts": [
+          "Поступило по завещанию П.И. Ляшенко. 1961"
+        ]
+      }
+    ]
+  },
   "tretyakov": {
     "imageUrl": "https://cdn.tretyakov.ru/mytretyakov/24/14d5f518c32e9d2de05e84c05981d56a/thumb/5bb430f4482f30a682e554b0720db04c_x1.jpg",
     "title": "Заросший пруд",
