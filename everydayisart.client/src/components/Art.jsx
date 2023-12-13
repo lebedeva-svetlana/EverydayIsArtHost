@@ -19,7 +19,6 @@ function Art() {
     let url = `${import.meta.env.VITE_URL_API}/random/${org}`;
 
     useEffect(() => {
-        alert(url);
         setArt(DefaultArt[org]);
         setIsArtShown(true);
     }, [org, url]);
