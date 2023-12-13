@@ -16,12 +16,13 @@ function Art() {
     const [hasError, setHasError] = useState(false);
 
     let { org } = useParams();
-    let url = `https://localhost:7015/${org}`;
+    let url = `${import.meta.env.VITE_URL_API}/random/${org}`;
 
     useEffect(() => {
+        alert(url);
         setArt(DefaultArt[org]);
         setIsArtShown(true);
-    }, [org]);
+    }, [org, url]);
 
     async function handleClick() {
         setHasError(false);
