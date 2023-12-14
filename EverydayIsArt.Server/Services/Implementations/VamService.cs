@@ -158,7 +158,7 @@ namespace EverydayIsArt.Server.Services
                 }
                 else if (placeOfOrigin is null && description.Count == 1)
                 {
-                    description[0].Parts.Add(medium);
+                    description[0].Parts.Add(accessionNumber);
                 }
                 else
                 {
