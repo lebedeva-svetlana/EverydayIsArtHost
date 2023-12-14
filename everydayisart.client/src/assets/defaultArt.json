@@ -73,5 +73,29 @@
         ]
       }
     ]
+  },
+  "metmuseum": {
+    "imageUrl": "https://images.metmuseum.org/CRDImages/ep/original/DP264496.jpg",
+    "title": "The Bathing Pool",
+    "date": "1777–79",
+    "author": [
+      "Hubert Robert"
+    ],
+    "sourceUrl": "https://www.metmuseum.org/art/collection/search/437473/",
+    "sourceUrlText": "© The Metropolitan Museum of Art",
+    "description": [
+      {
+        "parts": [
+          "Dimensions: 68 3/4 x 48 3/4 in. (174.6 x 123.8 cm)",
+          "Medium: Oil on canvas",
+          "Accession number: 17.190.29"
+        ]
+      },
+      {
+        "parts": [
+          "Gift of J. Pierpont Morgan, 1917"
+        ]
+      }
+    ]
   }
 }
