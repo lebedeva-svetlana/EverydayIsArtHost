@@ -1,5 +1,4 @@
 ﻿using EverydayIsArt.Server.Models;
-using EverydayIsArt.Server.Services;
 
 namespace EverydayIsArt.Server.Services
 {
