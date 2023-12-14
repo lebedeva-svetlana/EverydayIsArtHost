@@ -40,6 +40,7 @@ function Header() {
                     <div className="nav-line"></div>
                     <NavLink to="/random/tretyakov" className={({ isActive }) => (isActive ? active : normal)}>Третьяковская галерея</NavLink>
                     <NavLink to="/random/vam" className={({ isActive }) => (isActive ? active : normal)}>Музей Виктории и Альберта</NavLink>
+                    <NavLink to="/random/metmuseum" className={({ isActive }) => (isActive ? active : normal)}>Метрополитен-музей</NavLink>
                     <div className="nav-line"></div>
                     <NavLink to="/about" className={({ isActive }) => (isActive ? active : normal)}>О проекте</NavLink>
                     <NavLink to="/termsofuse" className={({ isActive }) => (isActive ? active : normal)}>Условия использования</NavLink>
