@@ -6,10 +6,11 @@ namespace EverydayIsArt.Server.Services
     {
         private List<IArtService> _services = new();
 
-        public AllService(ITretyakovService tretyakovService, IVamService vamService)
+        public AllService(ITretyakovService tretyakovService, IVamService vamService, IMetmuseumService metmuseumService)
         {
             _services.Add(tretyakovService);
             _services.Add(vamService);
+            _services.Add(metmuseumService);
         }
 
         public async Task<Art> GetArt()
