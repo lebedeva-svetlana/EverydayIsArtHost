@@ -1,24 +1,28 @@
 # EverydayIsArt
 
-Website that sends out random museum exhibits. Work in progress.
+Website that sends out random museum exhibits.
 
 ## Screenshots
 
 ### About
 
-![About](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/c3fe9880-5f8b-4b42-a82e-2b0fdd150dc2)
+![About](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/3f9b96a7-85a4-48a9-a810-5c8623bff7f2)
+
+### Common Gallery on Mobile with Dark Theme
+
+![CommonDarkMobile](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/37857d89-56af-48da-9b15-1c3fcb01f291)
 
 ### The State Tretyakov Gallery
 
-![TheStateTretyakovGallery](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/2bdf191a-8c00-4954-9a1c-7731ffbc63e8)
+![Tretyakov](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/11afea0f-d239-4a97-a327-c06f187f1605)
 
 ### Victoria and Albert Museum
 
-![VictoriaAndAlbertMuseum](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/d0d9e6aa-dbb1-463f-8542-e19cfa4df6df)
+![Vam](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/6a0fe4aa-2fb2-4f41-a662-8ae4e2177357)
 
-### Dark Mobile Scheme
+### The Metropolitan Museum of Art
 
-![DarkMobileMod](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/cb9ff0af-382d-4c51-a81c-c2dd950d430a)
+![Metmuseum](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/b966e89d-540e-4577-aa8f-a9acf79b789e)
 
 ## Credits
 
@@ -32,4 +36,5 @@ Third-party libraries:
 
 - [The State Tretyakov Gallery](https://www.tretyakovgallery.ru/about/copirith/)
 - [Victoria and Albert Museum](https://www.vam.ac.uk/info/va-websites-terms-conditions)
+- [The Metropolitan Museum of Art](https://www.metmuseum.org/policies/terms-and-conditions)
 
