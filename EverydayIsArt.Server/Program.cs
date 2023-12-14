@@ -1,5 +1,5 @@
-using Serilog;
 using EverydayIsArt.Server.Services;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -35,6 +35,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<ITretyakovService, TretyakovService>();
 builder.Services.AddScoped<IVamService, VamService>();
 builder.Services.AddScoped<IAllService, AllService>();
+builder.Services.AddScoped<IMetmuseumService, MetmuseumService>();
 builder.Services.AddScoped<IHTMLService, HTMLService>();
 
 var app = builder.Build();
