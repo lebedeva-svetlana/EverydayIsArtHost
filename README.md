@@ -1,6 +1,6 @@
 # EverydayIsArt
 
-Website that sends out random museum exhibits.
+EverydayIsArt client web application.
 
 ## Screenshots
 
@@ -28,8 +28,6 @@ Website that sends out random museum exhibits.
 
 Third-party libraries:
 
-- [Html Agility Pack](https://github.com/desandro/masonry](https://github.com/zzzprojects/html-agility-pack)https://github.com/zzzprojects/html-agility-pack) licensed with MIT.
-- [Serilog](https://github.com/serilog/serilog-sinks-file) licensed with Apache-2.0 license.
 - [React Responsive](https://github.com/yocontra/react-responsive) licensed with MIT.
 
 ## Terms of use
@@ -38,3 +36,6 @@ Third-party libraries:
 - [Victoria and Albert Museum](https://www.vam.ac.uk/info/va-websites-terms-conditions)
 - [The Metropolitan Museum of Art](https://www.metmuseum.org/policies/terms-and-conditions)
 
+## API
+
+API repository: [EverydayIsArtAPI](https://github.com/lebedeva-svetlana/EverydayIsArtAPI)
