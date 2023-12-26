@@ -45,6 +45,12 @@
             position: static;
         }
     }
+
+    .share-art-icon {
+        height: 1.4em;
+        margin: 0 0 0 10px;
+        width: 1.4em;
+    }
 }
 
 @media only screen and (min-width: 980px) {
@@ -66,6 +72,17 @@
         .color-scheme-icon {
             height: 2.5em;
             width: 2.5em;
+        }
+    }
+
+    .share-art {
+        position: absolute;
+        right: 30px;
+        top: 3.5em;
+
+        .share-art-icon {
+            height: 1.8em;
+            width: 1.8em;
         }
     }
 }

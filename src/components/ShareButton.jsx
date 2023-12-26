@@ -1,21 +1,36 @@
-import { useMediaQuery } from "react-responsive";
-import { useState, useEffect } from "react";
-
-/*import Icon from '../assets/images/colorScheme.svg';*/
+﻿import Icon from '../assets/images/share.svg';
 
 import '../styles/ShareButton.scss';
 
-//function ShareButton() {
-//    const [isDark, setIsDark] = useState(false);
-//    function handleClick() {
-//        setIsDark(!isDark);
-//    }
+function ShareButton({ authors, title, date, org, url }) {
+    function handleClick() {
+        let text = '';
+        if (title) {
+            text += title;
+        }
+        if (date) {
+            text += text.length != 0 ? `. ${date}` : date;
+        }
+        if (authors) {
+            if (text.length != 0) {
+                text += '\n\n';
+            }
 
-//    return (
-//        <button onClick={handleClick} className="change-color-scheme">
-//            <img src={Icon} className="color-scheme-icon"></img>
-//        </button >
-//    );
-//}
+            text += authors.join('. ');
+        }
+        if (text.length != 0) {
+            text += '\n\n';
+        }
+        text += `${org}: ${url}\n\nНайдено с помощью EverydaIsArt`
 
-//export default ColorSchemeButton;
+        navigator.clipboard.writeText(text).then(() => alert('Скопировано!'));
+    }
+
+    return (
+        <button onClick={handleClick} className="share-art">
+            <img src={Icon} className="share-art-icon"></img>
+        </button >
+    );
+}
+
+export default ShareButton;
