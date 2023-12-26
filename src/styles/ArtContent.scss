@@ -25,7 +25,7 @@
     }
 
     .art-date {
-        color: vars.$grey-base;
+        color: vars.$color-unimportant;
         font-size: 1.2em;
     }
 
@@ -34,8 +34,8 @@
     }
 
     .art-title {
-        color: vars.$yellow-base;
-        font-family: vars.$title-font;
+        color: vars.$color-primary;
+        font-family: vars.$font-title;
         font-size: 1.8em;
         margin: 0;
     }

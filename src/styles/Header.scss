@@ -5,7 +5,7 @@
     margin: 30px;
     padding: 0 30px 0 0;
     text-transform: uppercase;
-    border-right: 1px solid vars.$grey-base;
+    border-right: 1px solid vars.$color-unimportant;
 
     .header-title {
         font-size: 2em;
@@ -13,12 +13,12 @@
         margin: 0;
 
         &:hover {
-            color: vars.$yellow-base;
+            color: vars.$color-primary;
         }
     }
 
     .header-title-is {
-        color: vars.$yellow-base;
+        color: vars.$color-primary;
     }
 }
 
@@ -27,7 +27,7 @@
     flex-direction: column;
 
     a {
-        font-family: vars.$title-font;
+        font-family: vars.$font-title;
         text-decoration: none;
     }
 
@@ -39,28 +39,28 @@
         margin: 0 0 20px 0;
 
         &:hover {
-            color: vars.$yellow-base;
+            color: vars.$color-primary;
         }
 
         &:focus {
-            color: vars.$yellow-dark;
+            color: vars.$color-seconday;
         }
     }
 
     .nav-link-active {
         &::before {
-            color: vars.$yellow-base;
+            color: vars.$color-primary;
             content: '●';
             padding: 0 5px 0 0;
         }
 
         &:hover::before {
-            color: vars.$yellow-dark;
+            color: vars.$color-seconday;
         }
     }
 
     .nav-line {
-        background-color: vars.$grey-base;
+        background-color: vars.$color-unimportant;
         height: 0.5px;
         margin: 0 auto 20px auto;
         width: 50%;

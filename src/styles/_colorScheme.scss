@@ -1,13 +1,13 @@
 ﻿@use '_vars.scss';
 
 body {
-    --color: #{vars.$light-color-base};
+    --color: #{vars.$color-light-font};
     --background-color: white;
 }
 
 body.dark {
-    --color: #{vars.$dark-color-base};
-    --background-color: #{vars.$dark-color-background};
+    --color: #{vars.$color-dark-font};
+    --background-color: #{vars.$color-dark-background};
 }
 
 

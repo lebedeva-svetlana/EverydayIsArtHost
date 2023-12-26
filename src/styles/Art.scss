@@ -30,7 +30,7 @@
         align-items: center;
         display: flex;
         flex-direction: row;
-        font-family: vars.$title-font;
+        font-family: vars.$font-title;
         font-size: 0.9em;
         margin: 0 0 0 15px;
         text-transform: uppercase;
@@ -42,8 +42,8 @@
 }
 
 .art-error {
-    color: vars.$yellow-base;
-    font-family: vars.$title-font;
+    color: vars.$color-primary;
+    font-family: vars.$font-title;
     font-size: 1.5em;
     margin: 0;
     text-transform: uppercase;

@@ -11,7 +11,7 @@
 
     .terms-li::marker {
         font-size: 1.8em;
-        font-family: vars.$title-font;
+        font-family: vars.$font-title;
     }
 
     .terms-source-group {
@@ -20,8 +20,8 @@
     }
 
     .terms-source-title {
-        color: vars.$yellow-base;
-        font-family: vars.$title-font;
+        color: vars.$color-primary;
+        font-family: vars.$font-title;
         font-size: 1em;
         margin: 0 0 10px 0;
         text-transform: uppercase;

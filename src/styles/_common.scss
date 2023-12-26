@@ -21,29 +21,29 @@
     height: min-content;
 
     &:hover {
-        color: vars.$yellow-base;
+        color: vars.$color-primary;
     }
 
     &:focus {
-        color: vars.$yellow-dark;
+        color: vars.$color-seconday;
     }
 }
 
 .button-base {
     background-color: transparent;
-    border: 1px solid vars.$yellow-base;
+    border: 1px solid vars.$color-primary;
     cursor: pointer;
-    font-family: vars.$title-font;
+    font-family: vars.$font-title;
     padding: 8px 16px;
     text-transform: uppercase;
 
     &:hover {
-        background-color: vars.$yellow-base;
+        background-color: vars.$color-primary;
         color: white;
     }
 
     &:focus {
-        background-color: vars.$yellow-dark;
+        background-color: vars.$color-seconday;
         color: white;
     }
 
@@ -54,22 +54,22 @@
 }
 
 .a-base {
-    text-decoration-color: vars.$yellow-base;
+    text-decoration-color: vars.$color-primary;
 
     &:hover {
-        color: vars.$yellow-base;
+        color: vars.$color-primary;
         text-decoration: none;
     }
 
     &:focus {
-        color: vars.$yellow-dark;
+        color: vars.$color-seconday;
         text-decoration: none;
     }
 }
 
 input[type="checkbox"] {
     appearance: none;
-    border: 1px solid vars.$yellow-base;
+    border: 1px solid vars.$color-primary;
     color: currentColor;
     cursor: pointer;
     display: grid;
@@ -83,7 +83,7 @@ input[type="checkbox"] {
     &::before {
         background-color: none;
         border-radius: 100%;
-        box-shadow: inset 1em 1em vars.$yellow-base;
+        box-shadow: inset 1em 1em vars.$color-primary;
         content: "";
         height: 0.6em;
         transform: scale(0);
@@ -100,13 +100,13 @@ input[type="checkbox"] {
     }
 
     &:checked:hover::before {
-        box-shadow: inset 1em 1em vars.$yellow-dark;
+        box-shadow: inset 1em 1em vars.$color-seconday;
         opacity: 1;
     }
 }
 
 label:hover {
-    color: vars.$yellow-base;
+    color: vars.$color-primary;
     cursor: pointer;
 }
 
