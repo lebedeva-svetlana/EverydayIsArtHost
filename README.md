@@ -8,21 +8,13 @@ EverydayIsArt client web application.
 
 ![About](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/3f9b96a7-85a4-48a9-a810-5c8623bff7f2)
 
-### Common Gallery on Mobile with Dark Theme
+### Common Gallery
 
-![CommonDarkMobile](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/37857d89-56af-48da-9b15-1c3fcb01f291)
-
-### The State Tretyakov Gallery
-
-![Tretyakov](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/11afea0f-d239-4a97-a327-c06f187f1605)
-
-### Victoria and Albert Museum
-
-![Vam](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/6a0fe4aa-2fb2-4f41-a662-8ae4e2177357)
+![CommonDarkMobile](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/e1da2e65-8ea9-4d83-b921-1219f8c9d9dc)
 
 ### The Metropolitan Museum of Art
 
-![Metmuseum](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/b966e89d-540e-4577-aa8f-a9acf79b789e)
+![Vam](https://github.com/lebedeva-svetlana/EverydayIsArt/assets/91262515/4fbbc82e-3d43-4411-8e2d-885032298b00)
 
 ## Credits
 
