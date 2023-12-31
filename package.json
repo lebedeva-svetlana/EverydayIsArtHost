@@ -1,6 +1,6 @@
 {
   "name": "everydayisart.client",
-  "private": true,
+  "private": false,
   "homepage": "https://lebedeva-svetlana.github.io/EverydayIsArt/",
   "version": "0.0.0",
   "type": "module",
