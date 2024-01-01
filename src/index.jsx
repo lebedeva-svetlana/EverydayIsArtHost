@@ -21,6 +21,12 @@ const router = createBrowserRouter([
         ),
         children: [
             {
+                path: "EverydayIsArt",
+                element: (
+                    <About></About>
+                )
+            },
+            {
                 path: "/",
                 element: (
                     <About></About>
