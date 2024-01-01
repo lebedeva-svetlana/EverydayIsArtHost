@@ -18,7 +18,7 @@
     }
 
     .art {
-        max-width: 400px;
+        max-width: 300px;
     }
 
     .header-mobile {
@@ -53,11 +53,15 @@
     }
 }
 
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 1200px) {
     #root {
         grid-template-areas: "header main";
         grid-template-columns: 1fr 4fr;
         grid-template-rows: 1fr;
+    }
+
+    .art {
+        max-width: 600px;
     }
 
     .header-link {
