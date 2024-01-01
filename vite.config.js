@@ -1,5 +1,4 @@
 import { fileURLToPath, URL } from 'node:url';
-
 import { defineConfig } from 'vite';
 import plugin from '@vitejs/plugin-react';
 import fs from 'fs';
@@ -7,21 +6,20 @@ import path from 'path';
 import child_process from 'child_process';
 
 const baseFolder =
-    import.meta.env.APPDATA !== undefined && import.meta.env.APPDATA !== ''
-        ? `${import.meta.env.APPDATA}/ASP.NET/https`
-        : `${import.meta.env.HOME}/.aspnet/https`;
+    process.env.APPDATA !== undefined && process.env.APPDATA !== ''
+        ? `${process.env.APPDATA}/ASP.NET/https`
+        : `${process.env.HOME}/.aspnet/https`;
 
-const certificateArg = import.meta.argv.map(arg => arg.match(/--name=(?<value>.+)/i)).filter(Boolean)[0];
+const certificateArg = process.argv.map(arg => arg.match(/--name=(?<value>.+)/i)).filter(Boolean)[0];
 const certificateName = certificateArg ? certificateArg.groups.value : "everydayisart.client";
 
 if (!certificateName) {
     console.error('Invalid certificate name. Run this script in the context of an npm/yarn script or pass --name=<<app>> explicitly.')
-    import.meta.exit(-1);
+    process.exit(-1);
 }
 
 const certFilePath = path.join(baseFolder, `${certificateName}.pem`);
 const keyFilePath = path.join(baseFolder, `${certificateName}.key`);
-
 if (!fs.existsSync(certFilePath) || !fs.existsSync(keyFilePath)) {
     if (0 !== child_process.spawnSync('dotnet', [
         'dev-certs',
@@ -35,7 +33,6 @@ if (!fs.existsSync(certFilePath) || !fs.existsSync(keyFilePath)) {
         throw new Error("Could not create certificate.");
     }
 }
-
 // https://vitejs.dev/config/
 export default defineConfig({
     plugins: [plugin()],
