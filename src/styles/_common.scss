@@ -77,11 +77,11 @@ input[type="checkbox"] {
     cursor: pointer;
     display: grid;
     font: inherit;
-    height: 1.2em;
+    min-height: 1.2em;
     margin: 0;
     place-content: center;
-    width: 1.2em;
-    border-radius: 100%;
+    min-width: 1.2em;
+    border-radius: 50%;
 
     &::before {
         background-color: none;
