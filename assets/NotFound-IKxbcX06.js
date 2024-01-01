@@ -1,0 +1,1 @@
+import{j as s}from"./index-wtsusVKK.js";function o(){return s.jsxs("div",{className:"not-found",children:[s.jsx("h2",{className:"not-found-code",children:"404"}),s.jsx("p",{className:"not-found-message",children:"Извините, страница, которую вы ищете, не существует."})]})}export{o as default};
