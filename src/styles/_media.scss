@@ -7,6 +7,10 @@
         grid-template-columns: 1fr;
     }
 
+    .header-title {
+        font-size: 1.5em;
+    }
+
     .header {
         border: none;
         margin-bottom: 0;
@@ -57,6 +61,10 @@
         grid-template-areas: "header main";
         grid-template-columns: 1fr 4fr;
         grid-template-rows: 1fr;
+    }
+
+    .header-title {
+        font-size: 2em;
     }
 
     .art {
