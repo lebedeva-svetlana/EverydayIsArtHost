@@ -53,7 +53,7 @@
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 980px) {
     #root {
         grid-template-areas: "header main";
         grid-template-columns: 1fr 4fr;
