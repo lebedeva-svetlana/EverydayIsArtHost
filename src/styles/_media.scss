@@ -2,9 +2,10 @@
 
 @media only screen and (max-width: 980px) {
     #root {
+        box-sizing: border-box;
         grid-template-areas: "header" "main";
-        grid-template-rows: auto 1fr;
         grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
     }
 
     .header-title {
@@ -21,11 +22,16 @@
     }
 
     .main {
-        box-sizing: border-box;
+        max-width: 100%;
+    }
+
+    .art-panel {
+        max-width: 100%;
     }
 
     .art {
-        max-width: 300px;
+        // max-width: 300px;
+        max-width: 100%;
     }
 
     .header-mobile {
