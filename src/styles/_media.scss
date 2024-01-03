@@ -31,6 +31,7 @@
 
     .main {
         max-width: 100%;
+        padding: 0 10px 10px 10px;
     }
 
     .art-panel {
@@ -38,7 +39,6 @@
     }
 
     .art {
-        // max-width: 300px;
         max-width: 100%;
     }
 
@@ -87,6 +87,10 @@
 
     .header-title {
         font-size: 2em;
+    }
+
+    .main {
+        padding: 0 30px 30px 30px;
     }
 
     .art {
