@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+import { createHashRouter, RouterProvider, Outlet } from 'react-router-dom';
 
 import Layout from './Layout.jsx'
 import Loading from './components/Loading.jsx'
@@ -10,7 +10,7 @@ const Art = lazy(() => import('./components/Art.jsx'));
 const NotFound = lazy(() => import('./components/NotFound.jsx'));
 const TermsOfUse = lazy(() => import('./components/TermsOfUse.jsx'));
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         element: (
             <Layout>
