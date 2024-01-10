@@ -39,12 +39,6 @@ const router = createHashRouter([
                 )
             },
             {
-                path: "random/:org",
-                element: (
-                    <Art></Art>
-                )
-            },
-            {
                 path: 'termsofuse',
                 element: (
                     <TermsOfUse></TermsOfUse>
