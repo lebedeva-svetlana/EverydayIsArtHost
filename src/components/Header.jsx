@@ -1,13 +1,15 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { NavLink, Link } from "react-router-dom";
 
 import ColorSchemeButton from './ColorSchemeButton.jsx';
+import LoginLink from './LoginLink.jsx';
 
 import '../styles/Header.scss';
 
 function Header() {
     const [isNavOpen, setIsNavOpen] = useState(false);
+
     const isDesktop = useMediaQuery({
         query: '(min-width: 980px)'
     });
@@ -33,6 +35,7 @@ function Header() {
                         {title}
                         <button onClick={handleClick} className="button-symbol">☰</button>
                         <ColorSchemeButton></ColorSchemeButton>
+                        <LoginLink></LoginLink>
                     </div>
                 }
                 {(isDesktop || isNavOpen) && <>
@@ -45,7 +48,6 @@ function Header() {
                     <NavLink to="/about" className={({ isActive }) => (isActive ? active : normal)}>О проекте</NavLink>
                     <NavLink to="/termsofuse" className={({ isActive }) => (isActive ? active : normal)}>Условия использования</NavLink>
                 </>}
-
             </nav>
         </header >
     );
