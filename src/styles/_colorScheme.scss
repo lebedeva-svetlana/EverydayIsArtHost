@@ -11,10 +11,10 @@ body.dark {
 }
 
 
-body, input[type="checkbox"] {
+body, input[type="checkbox"], input {
     background-color: var(--background-color);
 }
 
-#root, nav a, .header-title:hover .header-title-is, .about-project-name-green, .button-base, .a-base, .button-symbol, .art-get, .terms-source-link {
+#root, nav a, .header-title:hover .header-title-is, .about-project-name-green, .button-base, .a-base, .button-symbol, .art-get, .terms-source-link, input, .aut-another-button, .aut-link {
     color: var(--color);
 }
