@@ -9,6 +9,8 @@ const About = lazy(() => import('./components/About.jsx'));
 const Art = lazy(() => import('./components/Art.jsx'));
 const NotFound = lazy(() => import('./components/NotFound.jsx'));
 const TermsOfUse = lazy(() => import('./components/TermsOfUse.jsx'));
+const Login = lazy(() => import('./components/Login.jsx'));
+const UserProfile = lazy(() => import('./components/UserProfile.jsx'));
 
 const router = createHashRouter([
     {
@@ -48,6 +50,18 @@ const router = createHashRouter([
                 path: 'about',
                 element: (
                     <About></About>
+                )
+            },
+            {
+                path: 'login',
+                element: (
+                    <Login></Login>
+                )
+            },
+            {
+                path: 'user',
+                element: (
+                    <UserProfile></UserProfile>
                 )
             },
             {
