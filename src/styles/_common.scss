@@ -70,6 +70,10 @@
     }
 }
 
+input {
+    font-family: vars.$font-text;
+}
+
 input[type="checkbox"] {
     appearance: none;
     border: 1px solid vars.$color-primary;
