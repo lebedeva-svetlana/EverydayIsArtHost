@@ -1,0 +1,20 @@
+﻿@use 'vars.scss';
+
+body {
+    --color: #{vars.$color-light-font};
+    --background-color: white;
+}
+
+body.dark {
+    --color: #{vars.$color-dark-font};
+    --background-color: #{vars.$color-dark-background};
+}
+
+
+body, input[type="checkbox"], input {
+    background-color: var(--background-color);
+}
+
+#root, nav a, .header-title:hover .header-title-is, .about-project-name-green, .button-base, .a-base, .button-symbol, .art-get, .terms-source-link, input, .aut-another-button, .aut-link, .logout {
+    color: var(--color);
+}

@@ -1,0 +1,53 @@
+﻿@use '../Common/vars.scss';
+@use '../Common/common.scss';
+
+.art-panel {
+    box-sizing: border-box;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-rows: auto 1fr;
+    justify-content: center;
+    min-height: 100%;
+    padding: 20px 30px 30px 30px;
+
+    &:has(.art-get:disabled) {
+        animation: flicker 2000ms infinite;
+        opacity: 0.90;
+        pointer-events: none;
+    }
+}
+
+.art-toolbar {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: min-content;
+    margin: 0 0 10px 0;
+    gap: 15px;
+
+    .art-get {
+        @extend .button-base;
+    }
+
+    .art-checkbox-label {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        font-family: vars.$font-title;
+        font-size: 0.9em;
+        text-transform: uppercase;
+    }
+
+    .art-checkbox {
+        margin: 0 5px 0 0;
+    }
+}
+
+.art-error {
+    color: vars.$color-primary;
+    font-family: vars.$font-title;
+    font-size: 1.5em;
+    margin: 0;
+    text-transform: uppercase;
+}

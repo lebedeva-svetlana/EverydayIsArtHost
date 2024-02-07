@@ -1,0 +1,16 @@
+﻿@use '../Common/normalize.css';
+@use '../Common/vars.scss';
+@use '../Common/colorScheme.scss';
+
+/** {
+    border: 1px solid grey;
+}*/
+
+#root {
+    display: grid;
+    font-family: vars.$font-text;
+    font-size: 100%;
+    margin: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+}

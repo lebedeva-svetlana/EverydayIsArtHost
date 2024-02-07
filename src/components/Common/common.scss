@@ -1,0 +1,161 @@
+﻿@use 'vars.scss';
+
+@keyframes flicker {
+    0% {
+        opacity: 0.75;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0.75;
+    }
+}
+
+.button-symbol {
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    height: min-content;
+    justify-content: center;
+
+    &:hover {
+        color: vars.$color-primary;
+    }
+
+    &:focus {
+        color: vars.$color-seconday;
+    }
+}
+
+%button {
+    border: none;
+    cursor: pointer;
+    font-family: vars.$font-title;
+    padding: 8px 16px;
+    text-transform: uppercase;
+}
+
+.button-text {
+    @extend %button;
+    background-color: transparent;
+    padding: 0;
+
+    &:hover {
+        color: vars.$color-primary;
+    }
+
+    &:focus {
+        color: vars.$color-seconday;
+    }
+}
+
+.button-base {
+    @extend %button;
+    background-color: transparent;
+    border: 1px solid vars.$color-primary;
+
+    &:hover {
+        background-color: vars.$color-primary;
+        color: white;
+    }
+
+    &:focus {
+        background-color: vars.$color-seconday;
+        color: white;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}
+
+.button-base-inverse {
+    @extend %button;
+    background-color: vars.$color-primary;
+    color: white;
+
+    &:hover {
+        background-color: vars.$color-seconday;
+    }
+
+    &:focus {
+        background-color: vars.$color-seconday;
+    }
+
+    &:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}
+
+.a-base {
+    text-decoration-color: vars.$color-primary;
+
+    &:hover {
+        color: vars.$color-primary;
+        text-decoration: none;
+    }
+
+    &:focus {
+        color: vars.$color-seconday;
+        text-decoration: none;
+    }
+}
+
+input {
+    font-family: vars.$font-text;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    border: 1px solid vars.$color-primary;
+    color: currentColor;
+    cursor: pointer;
+    display: grid;
+    font: inherit;
+    min-height: 1.2em;
+    margin: 0;
+    place-content: center;
+    min-width: 1.2em;
+    border-radius: 50%;
+
+    &::before {
+        background-color: none;
+        border-radius: 100%;
+        box-shadow: inset 1em 1em vars.$color-primary;
+        content: "";
+        height: 0.6em;
+        transform: scale(0);
+        width: 0.6em;
+    }
+
+    &:checked::before {
+        transform: scale(1);
+    }
+
+    &:hover::before {
+        opacity: 0.5;
+        transform: scale(1);
+    }
+
+    &:checked:hover::before {
+        box-shadow: inset 1em 1em vars.$color-seconday;
+        opacity: 1;
+    }
+}
+
+label:hover {
+    color: vars.$color-primary;
+    cursor: pointer;
+}
+
+label:has(input:disabled) {
+    pointer-events: none;
+    opacity: 0.5;
+}

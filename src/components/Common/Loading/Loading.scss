@@ -1,0 +1,13 @@
+﻿@use '../vars.scss';
+@use '../common.scss';
+
+.loading {
+    animation: flicker 2000ms infinite;
+    background-image: url('../assets/images/icon.svg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 150px;
+    box-sizing: border-box;
+    height: 100%;
+    min-height: 150px;
+}

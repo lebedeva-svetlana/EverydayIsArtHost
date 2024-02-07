@@ -1,0 +1,64 @@
+﻿@use '../../Common/vars.scss';
+
+.header {
+    grid-area: header;
+    text-transform: uppercase;
+    border-right: 1px solid vars.$color-unimportant;
+
+    .header-title {
+        text-align: center;
+        margin: 0;
+
+        &:hover {
+            color: vars.$color-primary;
+        }
+    }
+
+    .header-title-is {
+        color: vars.$color-primary;
+    }
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+
+    a {
+        font-family: vars.$font-title;
+        text-decoration: none;
+    }
+    /*    a:last-child {
+        margin: 0;
+    }*/
+
+    .nav-link {
+        margin: 0 0 20px 0;
+
+        &:hover {
+            color: vars.$color-primary;
+        }
+
+        &:focus {
+            color: vars.$color-seconday;
+        }
+    }
+
+    .nav-link-active {
+        &::before {
+            color: vars.$color-primary;
+            content: '●';
+            padding: 0 5px 0 0;
+        }
+
+        &:hover::before {
+            color: vars.$color-seconday;
+        }
+    }
+
+    .nav-line {
+        background-color: vars.$color-unimportant;
+        height: 0.5px;
+        margin: 0 auto 20px auto;
+        width: 50%;
+    }
+}

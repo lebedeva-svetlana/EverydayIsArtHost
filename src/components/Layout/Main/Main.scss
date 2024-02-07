@@ -1,0 +1,17 @@
+﻿@use '../../Common/vars.scss';
+@use '../../Common/common.scss';
+
+.main {
+    box-sizing: border-box;
+    grid-area: main;
+    min-height: 100%;
+}
+
+.main-bar {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+    grid-area: bar;
+    padding: 20px 20px 0 20px;
+}

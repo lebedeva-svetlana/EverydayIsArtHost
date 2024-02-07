@@ -1,0 +1,49 @@
+﻿@use '../../Common/vars.scss';
+@use '../../Common/common.scss';
+
+.art {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+}
+
+.art-image {
+    max-width: inherit;
+}
+
+.art-text {
+    box-sizing: border-box;
+    margin: 30px 0 0 0;
+    min-width: 100%;
+
+    .art-par {
+        line-height: 1.5em;
+        margin: 0;
+        text-align: justify;
+    }
+
+    .art-date {
+        color: vars.$color-unimportant;
+        font-size: 1.2em;
+    }
+
+    *:last-child {
+        margin: 0;
+    }
+
+    .art-title {
+        color: vars.$color-primary;
+        font-family: vars.$font-title;
+        margin: 0;
+    }
+
+    .art-source {
+        font-style: italic;
+        text-align: start;
+    }
+
+    .art-description-group {
+        margin: 0 0 20px 0;
+    }
+}

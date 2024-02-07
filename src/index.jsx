@@ -2,15 +2,15 @@ import React, { lazy, Suspense } from 'react'
 import ReactDOM from 'react-dom/client'
 import { createHashRouter, RouterProvider, Outlet } from 'react-router-dom';
 
-import Layout from './Layout.jsx'
-import Loading from './components/Loading.jsx'
+import Layout from './components/Layout/Layout.jsx'
+import Loading from './components/Common/Loading/Loading.jsx'
 
-const About = lazy(() => import('./components/About.jsx'));
-const Art = lazy(() => import('./components/Art.jsx'));
-const NotFound = lazy(() => import('./components/NotFound.jsx'));
-const TermsOfUse = lazy(() => import('./components/TermsOfUse.jsx'));
-const Login = lazy(() => import('./components/Login.jsx'));
-const UserProfile = lazy(() => import('./components/UserProfile.jsx'));
+const About = lazy(() => import('./components/About/About.jsx'));
+const Art = lazy(() => import('./components/Art/Art.jsx'));
+const NotFound = lazy(() => import('./components/Common/NotFound/NotFound.jsx'));
+const TermsOfUse = lazy(() => import('./components/TermsOfUse/TermsOfUse.jsx'));
+const Login = lazy(() => import('./components/Authorization/Login/Login.jsx'));
+const UserProfile = lazy(() => import('./components/User/UserProfile/UserProfile.jsx'));
 
 const router = createHashRouter([
     {

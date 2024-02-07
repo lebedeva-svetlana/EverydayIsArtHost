@@ -1,0 +1,37 @@
+﻿@use '../Common/vars.scss';
+@use '../Common/common.scss';
+
+.terms {
+    display: grid;
+    padding: 10px 30px 30px 60px;
+
+    .terms-ol {
+        padding: 0;
+    }
+
+    .terms-li::marker {
+        font-size: 1.8em;
+        font-family: vars.$font-title;
+    }
+
+    .terms-source-group {
+        margin: 0 0 25px 0;
+        padding: 0 0 0 15px;
+    }
+
+    .terms-source-title {
+        color: vars.$color-primary;
+        font-family: vars.$font-title;
+        font-size: 1em;
+        margin: 0 0 10px 0;
+        text-transform: uppercase;
+    }
+
+    .terms-source-p {
+        margin: 0;
+    }
+
+    .terms-source-link {
+        @extend .a-base;
+    }
+}
