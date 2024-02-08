@@ -1,4 +1,6 @@
-﻿import ColorSchemeButton from '../../Common/ColorSchemeButton/ColorSchemeButton.jsx';
+﻿import PropTypes from 'prop-types';
+
+import ColorSchemeButton from '../../Common/ColorSchemeButton/ColorSchemeButton.jsx';
 import LoginLink from '../../Authorization/LoginLink/LoginLink.jsx';
 
 import useDesktop from '../../../hooks/useDesktop.jsx';
@@ -20,5 +22,9 @@ function Main({ children }) {
         </>
     );
 }
+
+Main.propTypes = {
+    children: PropTypes.node
+};
 
 export default Main;

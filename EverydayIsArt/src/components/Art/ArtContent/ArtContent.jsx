@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import ArtDescription from '../ArtDescription/ArtDescription.jsx';
 
 import './ArtContent.scss';
@@ -22,5 +24,10 @@ function ArtContent({ artContent, isDescNeed }) {
         </div>
     );
 }
+
+ArtContent.propTypes = {
+    artContent: PropTypes.object,
+    isDescNeed: PropTypes.bool
+};
 
 export default ArtContent;

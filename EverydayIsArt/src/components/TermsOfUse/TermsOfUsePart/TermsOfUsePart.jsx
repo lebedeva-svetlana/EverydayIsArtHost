@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function TermsOfUsePart({ url, urlTitle, orgName }) {
     return (
         <li className="terms-li">
@@ -10,5 +12,11 @@ function TermsOfUsePart({ url, urlTitle, orgName }) {
         </li>
     );
 }
+
+TermsOfUsePart.propTypes = {
+    url: PropTypes.string,
+    urlTitle: PropTypes.string,
+    orgName: PropTypes.string
+};
 
 export default TermsOfUsePart;

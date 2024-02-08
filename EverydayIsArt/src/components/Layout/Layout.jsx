@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import Header from './Header/Header.jsx';
 import Main from './Main/Main.jsx';
 
@@ -12,5 +14,9 @@ function Layout({ children }) {
         </>
     );
 }
+
+Layout.propTypes = {
+    children: PropTypes.node
+};
 
 export default Layout;

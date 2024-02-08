@@ -1,4 +1,6 @@
-﻿import Icon from '../../../assets/images/share.svg';
+﻿import PropTypes from 'prop-types';
+
+import Icon from '../../../assets/images/share.svg';
 
 import './ShareButton.scss';
 
@@ -32,5 +34,13 @@ function ShareButton({ authors, title, date, org, url }) {
         </button >
     );
 }
+
+ShareButton.propTypes = {
+    authors: PropTypes.string,
+    title: PropTypes.string,
+    date: PropTypes.string,
+    org: PropTypes.string,
+    url: PropTypes.string
+};
 
 export default ShareButton;
