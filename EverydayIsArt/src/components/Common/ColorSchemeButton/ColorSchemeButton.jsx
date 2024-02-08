@@ -1,4 +1,3 @@
-import { useMediaQuery } from "react-responsive";
 import { useState, useEffect } from "react";
 
 import Icon from '../../../assets/images/colorScheme.svg';
@@ -7,18 +6,30 @@ import './ColorSchemeButton.scss';
 
 function ColorSchemeButton() {
     const [isDark, setIsDark] = useState(false);
-    const prefersColorScheme = useMediaQuery(
-        {
-            query: "(prefers-color-scheme: dark)",
-        },
-        undefined,
-        (isSchemeDark) => setIsDark(isSchemeDark)
-    );
 
     useEffect(() => {
-        isDark ? document.body.classList.add('dark') :
+        let isThemeDark = isStorageThemeDark();
+        if (isThemeDark || isDark) {
+            document.body.classList.add('dark');
+            setThemeToStorage('dark');
+        }
+        else {
             document.body.classList.remove('dark');
+            setThemeToStorage('light');
+        }
     }, [isDark]);
+
+    function isStorageThemeDark() {
+        let storageTheme = localStorage.getItem('theme');
+        return storageTheme !== 'dark';
+    }
+
+    function setThemeToStorage(theme) {
+        let storageTheme = localStorage.getItem('theme');
+        if (storageTheme !== theme) {
+            localStorage.setItem('theme', theme);
+        }
+    }
 
     function handleClick() {
         setIsDark(!isDark);
