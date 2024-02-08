@@ -14,6 +14,20 @@
     }
 }
 
+.line {
+    background-color: vars.$color-unimportant;
+    height: 0.5px;
+    margin: 0 auto 20px auto;
+    width: 50%;
+}
+
+.line-primary {
+    background-color: vars.$color-primary;
+    height: 1px;
+    margin: 0 auto 0 auto;
+    width: 50%;
+}
+
 .button-symbol {
     align-items: center;
     background-color: transparent;
@@ -111,6 +125,13 @@
         color: vars.$color-seconday;
         text-decoration: none;
     }
+}
+
+.a-base-text {
+    @extend .a-base;
+    font-family: vars.$font-title;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 input {

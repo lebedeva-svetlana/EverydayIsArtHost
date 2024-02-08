@@ -33,11 +33,11 @@ function Header() {
 
     let fullNav = <>
         <NavLink to="/random/all" className={({ isActive }) => getNavLinkClass(isActive)}>Общая галерея</NavLink>
-        <div className="nav-line"></div>
+        <div className="line"></div>
         <NavLink to="/random/tretyakov" className={({ isActive }) => getNavLinkClass(isActive)}>Третьяковская галерея</NavLink>
         <NavLink to="/random/vam" className={({ isActive }) => getNavLinkClass(isActive)}>Музей Виктории и Альберта</NavLink>
         <NavLink to="/random/metmuseum" className={({ isActive }) => getNavLinkClass(isActive)}>Метрополитен-музей</NavLink>
-        <div className="nav-line"></div>
+        <div className="line"></div>
         <NavLink to="/about" className={({ isActive }) => getNavLinkClass(isActive)}>О проекте</NavLink>
         <NavLink to="/termsofuse" className={({ isActive }) => getNavLinkClass(isActive)}>Условия использования</NavLink>
     </>;

@@ -13,6 +13,7 @@ const TermsOfUse = lazy(() => import('./components/TermsOfUse/TermsOfUse.jsx'));
 const Login = lazy(() => import('./components/Authorization/Login/Login.jsx'));
 const Register = lazy(() => import('./components/Authorization/Register/Register.jsx'));
 const UserProfile = lazy(() => import('./components/User/UserProfile/UserProfile.jsx'));
+const Favorites = lazy(() => import('./components/User/Favorites/Favorites.jsx'));
 
 const router = createHashRouter([
     {
@@ -73,9 +74,15 @@ const router = createHashRouter([
                 )
             },
             {
+                path: 'favorites',
+                element: (
+                    <Favorites></Favorites>
+                )
+            },
+            {
                 path: '*',
                 element: (
-                    <NotFound />
+                    <NotFound/>
                 )
             }
         ]
