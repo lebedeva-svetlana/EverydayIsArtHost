@@ -1,4 +1,4 @@
-﻿import '../styles/UserProfile.scss';
+﻿import './UserProfile.scss';
 
 function UserProfile() {
     return (
