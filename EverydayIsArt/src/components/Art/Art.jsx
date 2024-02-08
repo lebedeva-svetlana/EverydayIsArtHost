@@ -1,6 +1,5 @@
 ﻿import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { useMediaQuery } from 'react-responsive';
 
 import ArtContent from '../Art/ArtContent/ArtContent.jsx';
 import NotFound from '../Common/NotFound/NotFound.jsx'
@@ -18,10 +17,6 @@ function Art() {
     const [hasError, setHasError] = useState(false);
 
     let { org } = useParams();
-
-    const isDesktop = useMediaQuery({
-        query: '(min-width: 980px)'
-    });
 
     let url = `${import.meta.env.VITE_URL_API}/random/${org}`;
 

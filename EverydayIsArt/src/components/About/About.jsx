@@ -2,7 +2,6 @@ import Logo from '../../assets/images/icon.svg';
 
 import './About.scss';
 
-
 function About() {
     return (
         <div className="about">

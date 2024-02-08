@@ -1,18 +1,17 @@
-import { useState, useEffect } from 'react';
-import { useMediaQuery } from 'react-responsive';
+import { useState } from 'react';
 import { NavLink, Link } from "react-router-dom";
 
 import ColorSchemeButton from '../../Common/ColorSchemeButton/ColorSchemeButton.jsx';
 import LoginLink from '../../Authorization/LoginLink/LoginLink.jsx';
+
+import useDesktop from '../../../hooks/useDesktop.jsx';
 
 import './Header.scss';
 
 function Header() {
     const [isNavOpen, setIsNavOpen] = useState(false);
 
-    const isDesktop = useMediaQuery({
-        query: '(min-width: 980px)'
-    });
+    const isDesktop = useDesktop();
 
     let normal = "nav-link";
     let active = normal + " nav-link-active";

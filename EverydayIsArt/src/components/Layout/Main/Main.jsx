@@ -1,14 +1,12 @@
-﻿import { useMediaQuery } from 'react-responsive';
-
-import ColorSchemeButton from '../../Common/ColorSchemeButton/ColorSchemeButton.jsx';
+﻿import ColorSchemeButton from '../../Common/ColorSchemeButton/ColorSchemeButton.jsx';
 import LoginLink from '../../Authorization/LoginLink/LoginLink.jsx';
+
+import useDesktop from '../../../hooks/useDesktop.jsx';
 
 import './Main.scss';
 
 function Main({ children }) {
-    const isDesktop = useMediaQuery({
-        query: '(min-width: 980px)'
-    });
+    const isDesktop = useDesktop();
 
     return (
         <>
