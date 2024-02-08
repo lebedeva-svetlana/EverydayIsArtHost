@@ -75,6 +75,11 @@
     }
 }
 
+.button-base-a {
+    @extend .button-base;
+    text-decoration: none;
+}
+
 .button-base-inverse {
     @extend %button;
     background-color: vars.$color-primary;

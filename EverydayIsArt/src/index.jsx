@@ -11,6 +11,7 @@ const Art = lazy(() => import('./components/Art/Art.jsx'));
 const NotFound = lazy(() => import('./components/Common/NotFound/NotFound.jsx'));
 const TermsOfUse = lazy(() => import('./components/TermsOfUse/TermsOfUse.jsx'));
 const Login = lazy(() => import('./components/Authorization/Login/Login.jsx'));
+const Register = lazy(() => import('./components/Authorization/Register/Register.jsx'));
 const UserProfile = lazy(() => import('./components/User/UserProfile/UserProfile.jsx'));
 
 const router = createHashRouter([
@@ -57,6 +58,12 @@ const router = createHashRouter([
                 path: 'login',
                 element: (
                     <Login></Login>
+                )
+            },
+            {
+                path: 'register',
+                element: (
+                    <Register></Register>
                 )
             },
             {
