@@ -3,12 +3,12 @@
 import ColorSchemeButton from '../../Common/ColorSchemeButton/ColorSchemeButton.jsx';
 import LoginLink from '../../Authorization/LoginLink/LoginLink.jsx';
 
-import useDesktop from '../../../hooks/useDesktop.jsx';
+import useIsDesktop from '../../../hooks/useIsDesktop.jsx';
 
 import './Main.scss';
 
 function Main({ children }) {
-    const isDesktop = useDesktop();
+    const isDesktop = useIsDesktop();
 
     let mainBar = <div className="main-bar">
         <ColorSchemeButton></ColorSchemeButton>

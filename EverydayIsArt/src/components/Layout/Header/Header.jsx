@@ -5,14 +5,14 @@ import ColorSchemeButton from '../../Common/ColorSchemeButton/ColorSchemeButton.
 import LoginLink from '../../Authorization/LoginLink/LoginLink.jsx';
 import Title from '../Title/Title.jsx';
 
-import useDesktop from '../../../hooks/useDesktop.jsx';
+import useIsDesktop from '../../../hooks/useIsDesktop.jsx';
 
 import './Header.scss';
 
 function Header() {
     const [isNavOpen, setIsNavOpen] = useState(false);
 
-    const isDesktop = useDesktop();
+    const isDesktop = useIsDesktop();
 
     function inverseNavOpen() {
         setIsNavOpen(!isNavOpen);

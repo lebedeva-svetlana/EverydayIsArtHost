@@ -1,6 +1,6 @@
 import { useMediaQuery } from 'react-responsive';
 
-export default function useDesktop() {
+export default function useIsDesktop() {
     let isDesktop = useMediaQuery({
         query: '(min-width: 980px)'
     });
