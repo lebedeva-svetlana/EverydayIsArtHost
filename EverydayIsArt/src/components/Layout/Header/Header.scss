@@ -1,4 +1,5 @@
 ﻿@use '../../Common/vars.scss';
+@use '../../Common/common.scss';
 
 .header {
     grid-area: header;
@@ -53,12 +54,5 @@
         &:hover::before {
             color: vars.$color-seconday;
         }
-    }
-
-    .nav-line {
-        background-color: vars.$color-unimportant;
-        height: 0.5px;
-        margin: 0 auto 20px auto;
-        width: 50%;
     }
 }

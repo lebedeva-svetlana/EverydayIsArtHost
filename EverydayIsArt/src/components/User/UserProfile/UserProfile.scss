@@ -2,20 +2,36 @@
 @use '../../Common/common.scss';
 
 .profile {
+    align-items: flex-start;
     box-sizing: border-box;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-rows: auto 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     min-height: 100%;
     padding: 20px 30px 30px 30px;
 
-    .profile-toolbar {
-        align-items: center;
+    .profile-group {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: min-content;
-        margin: 0 0 10px 0;
+        align-items: center;
         gap: 15px;
+
+        &:hover {
+            img {
+                opacity: 0.7;
+            }
+
+            .logout {
+                color: vars.$color-primary;
+            }
+        }
+    }
+
+    .favorites-link {
+        @extend .a-base-text;
+    }
+
+    img {
+        height: 1.5em;
+        width: 1.5em;
     }
 }
