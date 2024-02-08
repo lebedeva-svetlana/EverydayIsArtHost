@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
-import Logout from '../Logout/Logout.jsx';
-
 import './LoginLink.scss';
 
 function LoginLink() {
@@ -29,7 +27,7 @@ function LoginLink() {
     }, []);
 
     if (loggedIn) {
-        return <Logout></Logout>
+        return <Link to="/user" className="aut-link">Профиль</Link>
     }
     else {
         return <Link to="/login" className="aut-link">Вход</Link>
