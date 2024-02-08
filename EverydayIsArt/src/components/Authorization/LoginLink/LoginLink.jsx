@@ -32,7 +32,7 @@ function LoginLink() {
         return <Logout></Logout>
     }
     else {
-        return <Link to="/login" className="aut-link">Войти</Link>
+        return <Link to="/login" className="aut-link">Вход</Link>
     }
 }
 
