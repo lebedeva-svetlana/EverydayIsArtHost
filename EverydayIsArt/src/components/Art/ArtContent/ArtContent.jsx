@@ -14,7 +14,7 @@ function ArtContent({ artContent, isDescNeed }) {
                     <p className="art-par art-date">{artContent.date}</p>
                 </div>
                 <div className="art-description-group">
-                    {artContent.author && Object.keys(artContent.author).map(a => <p className="art-par">{artContent.author[a]}</p>)}
+                    {artContent.author && Object.keys(artContent.author).map(a => <p className="art-par" key={artContent.author[a]}>{artContent.author[a]}</p>)}
                 </div>
                 {artContent.description && isDescNeed && <ArtDescription description={artContent.description}></ArtDescription>}
                 <p className="art-par art-source">
