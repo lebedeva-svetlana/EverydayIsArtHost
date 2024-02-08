@@ -8,15 +8,7 @@
         grid-template-rows: auto 1fr;
     }
 
-    .header-title {
-        font-size: 1.3em;
-    }
-
-    .about-title {
-        font-size: 1.3em;
-    }
-
-    .art-title {
+    .header-title, .about-title, .art-title {
         font-size: 1.3em;
     }
 
@@ -30,15 +22,10 @@
     }
 
     .main {
-        max-width: 100%;
         padding: 0 10px 10px 10px;
     }
 
-    .art-panel {
-        max-width: 100%;
-    }
-
-    .art {
+    .main, .art-panel, .art {
         max-width: 100%;
     }
 
@@ -95,7 +82,7 @@
 
     .art {
         max-width: 600px;
-/*        max-width: 100%;*/
+        /*        max-width: 100%;*/
     }
 
     .header-link {
@@ -118,11 +105,5 @@
     .share-art-icon {
         height: 1.8em;
         width: 1.8em;
-    }
-
-    .aut-link {
-        /*        position: absolute;
-        right: 30px;
-        top: 20px;*/
     }
 }
