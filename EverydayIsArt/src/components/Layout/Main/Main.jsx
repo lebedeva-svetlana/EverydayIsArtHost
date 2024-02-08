@@ -10,12 +10,14 @@ import './Main.scss';
 function Main({ children }) {
     const isDesktop = useDesktop();
 
+    let mainBar = <div className="main-bar">
+        <ColorSchemeButton></ColorSchemeButton>
+        <LoginLink></LoginLink>
+    </div>;
+
     return (
         <>
-            {isDesktop && <div className="main-bar">
-                <ColorSchemeButton></ColorSchemeButton>
-                <LoginLink></LoginLink>
-            </div>}
+            {isDesktop && mainBar}
             <main className="main">
                 {children}
             </main>

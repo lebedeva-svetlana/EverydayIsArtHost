@@ -1,7 +1,5 @@
 ﻿import '../styles/UserProfile.scss';
 
-import Logout from './Logout.jsx';
-
 function UserProfile() {
     return (
         <div className="profile">

@@ -31,14 +31,14 @@ function ColorSchemeButton() {
         }
     }
 
-    function handleClick() {
+    function inverseColorTheme() {
         setIsDark(!isDark);
     }
 
     return (
-        <button onClick={handleClick} className="change-color-scheme">
+        <button onClick={inverseColorTheme} className="change-color-scheme">
             <img src={Icon} className="color-scheme-icon"></img>
-        </button >
+        </button>
     );
 }
 

@@ -5,7 +5,7 @@ import Icon from '../../../assets/images/share.svg';
 import './ShareButton.scss';
 
 function ShareButton({ authors, title, date, org, url }) {
-    function handleClick() {
+    function getShareTextToClipboard() {
         let text = '';
         if (title) {
             text += title;
@@ -23,15 +23,15 @@ function ShareButton({ authors, title, date, org, url }) {
         if (text.length != 0) {
             text += '\n\n';
         }
-        text += `${org}: ${url}\n\nНайдено с помощью EverydaIsArt`
+        text += `${org}: ${url}\n\nНайдено с помощью EverydayIsArt`
 
         navigator.clipboard.writeText(text).then(() => alert('Скопировано!'));
     }
 
     return (
-        <button onClick={handleClick} className="share-art">
+        <button onClick={getShareTextToClipboard} className="share-art">
             <img src={Icon} className="share-art-icon"></img>
-        </button >
+        </button>
     );
 }
 

@@ -2,8 +2,7 @@ import './Loading.scss';
 
 function Loading() {
     return (
-        <div className="loading">
-        </div>
+        <div className="loading"></div>
     );
 }
 

@@ -25,7 +25,7 @@ function Art() {
         setIsArtShown(true);
     }, [org, url]);
 
-    async function handleClick() {
+    async function getNewArt() {
         setHasError(false);
         setIsLoading(true);
         let response = await fetch(url);
@@ -37,7 +37,7 @@ function Art() {
         setIsLoading(false);
     }
 
-    function handleChange() {
+    function inverseDescNeed() {
         setIsDescNeed(!isDescNeed);
     }
 
@@ -48,9 +48,9 @@ function Art() {
     return (
         <div className="art-panel" disabled={isLoading}>
             <div className="art-toolbar">
-                <button type="button" onClick={handleClick} disabled={isLoading} className="art-get">Исследовать</button>
+                <button type="button" onClick={getNewArt} disabled={isLoading} className="art-get">Исследовать</button>
                 <label disabled={isLoading} className="art-checkbox-label">
-                    <input type="checkbox" checked={isDescNeed} onChange={handleChange} disabled={isLoading} className="art-checkbox" />
+                    <input type="checkbox" checked={isDescNeed} onChange={inverseDescNeed} disabled={isLoading} className="art-checkbox" />
                     Показать описание
                 </label>
                 {isArtShown && <ShareButton authors={art.author} title={art.title} date={art.date} url={art.sourceUrl} org={art.sourceUrlText}></ShareButton>}
