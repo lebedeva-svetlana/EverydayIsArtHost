@@ -106,7 +106,8 @@ Authorization.propTypes = {
     autButtonText: PropTypes.string,
     autAnotherLinkText: PropTypes.string,
     autAnotherLink: PropTypes.string,
-    autAnotherText: PropTypes.string
+    autAnotherText: PropTypes.string,
+    isLogin: PropTypes.bool
 };
 
 export default Authorization;
