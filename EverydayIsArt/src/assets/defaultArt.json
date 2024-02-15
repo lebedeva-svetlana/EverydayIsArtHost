@@ -8,20 +8,14 @@
     ],
     "sourceUrl": "https://my.tretyakov.ru/app/masterpiece/10987",
     "sourceUrlText": "Из собрания Третьяковской галереи",
-    "description": [
-      {
-        "parts": [
-          "Размер - 125,5 x 178,5",
-          "Материал - холст",
-          "Техника - масло",
-          "Инвентарный номер - Ж-433"
-        ]
-      },
-      {
-        "parts": [
-          "Поступило по завещанию П.И. Ляшенко. 1961"
-        ]
-      }
+    "medium": [
+      "Размер - 125,5 x 178,5",
+      "Материал - холст",
+      "Техника - масло"
+    ],
+    "accessNumber": "Инвентарный номер - Ж-433",
+    "wayToGet": [
+      "Поступило по завещанию П.И. Ляшенко. 1961"
     ]
   },
   "tretyakov": {
@@ -33,20 +27,14 @@
     ],
     "sourceUrl": "https://my.tretyakov.ru/app/masterpiece/8420",
     "sourceUrlText": "Из собрания Третьяковской галереи",
-    "description": [
-      {
-        "parts": [
-          "Размер - 80 x 124,7",
-          "Материал - холст",
-          "Техника - масло",
-          "Инвентарный номер - Инв.10460"
-        ]
-      },
-      {
-        "parts": [
-          "Приобретено в 1928 у Я.И. Ачаркана"
-        ]
-      }
+    "medium": [
+      "Размер - 80 x 124,7",
+      "Материал - холст",
+      "Техника - масло"
+    ],
+    "accessNumber": "Инвентарный номер - Инв.10460",
+    "wayToGet": [
+      "Приобретено в 1928 у Я.И. Ачаркана"
     ]
   },
   "vam": {
@@ -58,20 +46,15 @@
     ],
     "sourceUrl": "https://collections.vam.ac.uk/item/O139805/the-citadel-of-sidon-watercolour-bowman-john-e/",
     "sourceUrlText": "© Victoria and Albert Museum, London",
-    "description": [
-      {
-        "parts": [
-          "Height: 23.9cm",
-          "Width: 34cm",
-          "Materials and techniques: pencil and watercolour heightened with white and gum",
-          "Accession number: SD.130"
-        ]
-      },
-      {
-        "parts": [
-          "Purchased with the assistance of the National Heritage Memorial Fund, Art Fund, Shell International and the Friends of the V&A."
-        ]
-      }
+    "medium": [
+      "Height: 23.9cm",
+      "Width: 34cm",
+      "Materials and techniques: pencil and watercolour heightened with white and gum"
+    ],
+    "accessNumber": "Accession number: SD.130",
+    "wayToGet": [
+      "Purchased with the assistance of the National Heritage Memorial Fund, Art Fund, Shell International and the Friends of the V&A."
+
     ]
   },
   "metmuseum": {
@@ -83,19 +66,13 @@
     ],
     "sourceUrl": "https://www.metmuseum.org/art/collection/search/437473/",
     "sourceUrlText": "© The Metropolitan Museum of Art",
-    "description": [
-      {
-        "parts": [
-          "Dimensions: 68 3/4 x 48 3/4 in. (174.6 x 123.8 cm)",
-          "Medium: Oil on canvas",
-          "Accession number: 17.190.29"
-        ]
-      },
-      {
-        "parts": [
-          "Gift of J. Pierpont Morgan, 1917"
-        ]
-      }
+    "medium": [
+      "Dimensions: 68 3/4 x 48 3/4 in. (174.6 x 123.8 cm)",
+      "Medium: Oil on canvas"
+    ],
+    "accessNumber": "Accession number: 17.190.29",
+    "wayToGet": [
+      "Gift of J. Pierpont Morgan, 1917"
     ]
   }
 }

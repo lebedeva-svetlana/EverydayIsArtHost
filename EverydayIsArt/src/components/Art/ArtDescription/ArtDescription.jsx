@@ -2,11 +2,9 @@ import PropTypes from 'prop-types';
 
 function ArtDescription({ description }) {
     return (
-        <>{Object.values(description).map(group => (
+        <>{Object.values(description).map(p => (
             <div className="art-description-group">
-                {Object.values(group).map(par => (
-                    Object.values(par).map(p => <p className="art-par">{p}</p>)
-                ))}
+                <p className="art-par">{p}</p>
             </div>
         ))}</>
     );
