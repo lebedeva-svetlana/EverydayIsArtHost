@@ -36,7 +36,7 @@ function ShareButton({ authors, title, date, org, url }) {
 }
 
 ShareButton.propTypes = {
-    authors: PropTypes.string,
+    authors: PropTypes.array,
     title: PropTypes.string,
     date: PropTypes.string,
     org: PropTypes.string,

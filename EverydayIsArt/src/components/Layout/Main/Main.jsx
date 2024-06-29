@@ -1,7 +1,6 @@
 ﻿import PropTypes from 'prop-types';
 
 import ColorSchemeButton from '../../Common/ColorSchemeButton/ColorSchemeButton.jsx';
-import LoginLink from '../../Authorization/LoginLink/LoginLink.jsx';
 
 import useIsDesktop from '../../../hooks/useIsDesktop.jsx';
 
@@ -12,7 +11,6 @@ function Main({ children }) {
 
     let mainBar = <div className="main-bar">
         <ColorSchemeButton></ColorSchemeButton>
-        <LoginLink></LoginLink>
     </div>;
 
     return (

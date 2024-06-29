@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { NavLink } from "react-router-dom";
 
 import ColorSchemeButton from '../../Common/ColorSchemeButton/ColorSchemeButton.jsx';
-import LoginLink from '../../Authorization/LoginLink/LoginLink.jsx';
 import Title from '../Title/Title.jsx';
 
 import useIsDesktop from '../../../hooks/useIsDesktop.jsx';
@@ -28,7 +27,6 @@ function Header() {
         <Title></Title>
         <button onClick={inverseNavOpen} className="button-symbol">☰</button>
         <ColorSchemeButton></ColorSchemeButton>
-        <LoginLink></LoginLink>
     </div>;
 
     let fullNav = <>
